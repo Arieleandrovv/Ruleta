@@ -9,5 +9,16 @@ package Modelo;
  * @author Windows 10
  */
 public class Casillero {
+    private int numero;
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    
+    
     
 }
