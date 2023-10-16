@@ -8,13 +8,16 @@ package Modelo;
  *
  * @author Windows 10
  */
-public class casillaVerde extends Casillero{
-    private String color;
+public class casillaVerde implements Casillero{
+    private String color="verde";
 
-    public String getColor() {
-        return color;
+    @Override
+    public boolean isCasillero(int numero) {
+        if (numero==0){
+            return true;
+        }else{
+            return false;
+        }
     }
-    
-    
     
 }
