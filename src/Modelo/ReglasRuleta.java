@@ -7,6 +7,8 @@ package Modelo;
 /**
  *
  * Marcia Lafuente v1
+ * prueba git
+ * 
  */
 public class ReglasRuleta {
     
