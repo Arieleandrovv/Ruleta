@@ -8,7 +8,7 @@ package Modelo;
  *
  * @author Windows 10
  */
-public class casillaVerde implements Casillero{
+public class CasillaVerde implements Casillero{
     private String color="verde";
 
     @Override
@@ -18,6 +18,12 @@ public class casillaVerde implements Casillero{
         }else{
             return false;
         }
+    }
+    public String getColor() {
+        return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
     }
     
 }

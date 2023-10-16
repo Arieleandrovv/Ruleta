@@ -8,7 +8,7 @@ package Modelo;
  *
  * @author Windows 10
  */
-public class casillaNegra implements Casillero {
+public class CasillaNegra implements Casillero {
     private String color="negro";
     private int[] numerosNegros= {2, 4, 6, 8, 10, 11, 13, 15, 17, 
                                 20, 22, 24, 26, 28, 29, 31, 33, 35};
@@ -21,4 +21,13 @@ public class casillaNegra implements Casillero {
         }
         return false;        
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
 }
