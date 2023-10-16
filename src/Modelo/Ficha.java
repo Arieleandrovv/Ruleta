@@ -8,14 +8,16 @@ package Modelo;
  *
  * Marcia Lafuente v1
  */
-public class Rueda {
-    //aleatoriedad 
-    public int aleatorio(int numero){
-    
-     
-    return numero;
+public class Ficha {
+    private int valor;
+    private String color;
+
+    public int getValor() {
+        return valor;
     }
-    public void crearCasilla(){
+
+    public String getColor() {
+        return color;
     }
     
     

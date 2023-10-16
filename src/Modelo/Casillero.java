@@ -6,8 +6,15 @@ package Modelo;
 
 /**
  *
- * @author Windows 10
+ * Marcia Lafuente v1
  */
 public class Casillero {
     
+    
+    
+  public int generar_numero(){
+  
+  return 0; 
+  }
+  
 }

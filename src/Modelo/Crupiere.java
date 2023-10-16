@@ -6,17 +6,10 @@ package Modelo;
 
 /**
  *
- * Marcia Lafuente v1
+ * @author Windows 10
  */
-public class Rueda {
-    //aleatoriedad 
-    public int aleatorio(int numero){
-    
-     
-    return numero;
-    }
-    public void crearCasilla(){
-    }
-    
-    
+public class Crupiere {
+    private int tiempo;
+public void empezarJuego(){
+}
 }

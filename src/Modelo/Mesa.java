@@ -6,17 +6,16 @@ package Modelo;
 
 /**
  *
- * Marcia Lafuente v1
+ * Marcia Lafuente
  */
-public class Rueda {
-    //aleatoriedad 
-    public int aleatorio(int numero){
+public class Mesa {
+    private int monto;
+
+    public int getMonto() {
+        return monto;
+    }
     
-     
-    return numero;
-    }
-    public void crearCasilla(){
-    }
+    
     
     
 }

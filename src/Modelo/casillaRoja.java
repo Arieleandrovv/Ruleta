@@ -6,17 +6,13 @@ package Modelo;
 
 /**
  *
- * Marcia Lafuente v1
+ * @author Windows 10
  */
-public class Rueda {
-    //aleatoriedad 
-    public int aleatorio(int numero){
-    
-     
-    return numero;
+public class casillaRoja extends Casillero{
+    private String color;
+
+    public String getColor() {
+        return color;
     }
-    public void crearCasilla(){
-    }
-    
-    
+
 }
