@@ -8,13 +8,15 @@ package Modelo;
  *
  * Marcia Lafuente
  */
-public class Apuesta {
+public class Apuesta extends ReglasRuleta {
    private int monto;
 
     public int getMonto() {
         return monto;
     }
-   
-   
+
+    public void setMonto(int monto) {
+        this.monto = monto;
+    }
    
 }

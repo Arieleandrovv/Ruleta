@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import Modelo.Apuesta;
+import Modelo.Billetera;
 import Modelo.Rueda;
 import Modelo.CasillaNegra;
 import Modelo.CasillaRoja;
@@ -22,13 +24,18 @@ public class Ruleta extends javax.swing.JFrame {
     CasillaNegra cane;
     CasillaRoja caro;
     CasillaVerde cave;
-    Rueda ruedaGirando;    
+    Rueda ruedaGirando;
+    Apuesta apuestaColor;
+    Billetera billeteraUsuario;
     public Ruleta() {
         initComponents();
         ruedaGirando=new Rueda();
         cane= new CasillaNegra();
         caro= new CasillaRoja();
         cave= new CasillaVerde();
+        apuestaColor=new Apuesta();
+        billeteraUsuario=new Billetera();
+        apuestaColor.setMonto(0);
     }
 
     /**
@@ -44,6 +51,12 @@ public class Ruleta extends javax.swing.JFrame {
         Empezar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,9 +67,22 @@ public class Ruleta extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("jLabel1");
+        jLabel3.setText("numero");
 
-        jLabel2.setText("jLabel2");
+        jLabel4.setText("color");
+
+        jLabel5.setText("rojo");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+
+        jLabel6.setText("negro");
+
+        jLabel7.setText("jLabel7");
+
+        jLabel8.setText("jLabel8");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -66,23 +92,49 @@ public class Ruleta extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(154, 154, 154)
-                        .addComponent(Empezar))
+                        .addComponent(Empezar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel8))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(93, 93, 93)
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4))
+                        .addGap(26, 26, 26)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1))))
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addGap(76, 76, 76))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(57, 57, 57)
-                .addComponent(jLabel1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3))
                 .addGap(26, 26, 26)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
-                .addComponent(Empezar)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Empezar)
+                    .addComponent(jLabel8))
                 .addGap(62, 62, 62))
         );
 
@@ -106,12 +158,20 @@ public class Ruleta extends javax.swing.JFrame {
             jLabel2.setText(cane.getColor());
         }else if(caro.isCasillero(numero)){
             jLabel2.setText(caro.getColor());
+            jLabel8.setText(apuestaColor.apuestaColor(apuestaColor.getMonto())+"");
+            jLabel1.setText(numero+"");
         }else if (cave.isCasillero(numero)){
             jLabel2.setText(cave.getColor());
         }
-        //String Color=
-        jLabel1.setText(numero+"");
+        
     }//GEN-LAST:event_EmpezarActionPerformed
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        
+        int monto=apuestaColor.getMonto()+5;
+        apuestaColor.setMonto(monto);
+        jLabel7.setText(apuestaColor.getMonto()+"");
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -152,6 +212,12 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JButton Empezar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
