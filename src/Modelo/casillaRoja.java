@@ -8,11 +8,26 @@ package Modelo;
  *
  * @author Windows 10
  */
-public class casillaRoja extends Casillero{
-    private String color;
+public class CasillaRoja implements Casillero{
+    private String color="rojo";
+    private int[] numerosRojos= {1, 3, 5, 7, 9, 12, 14, 16, 18, 
+                                19, 21, 23, 25, 27, 30, 32, 34, 36};
+    @Override
+    public boolean isCasillero(int numero) {
+        for(int x=0; x<numerosRojos.length;x++){
+            if (numero==numerosRojos[x]){
+                return true;
+            }
+        }
+        return false;        
+    }
 
     public String getColor() {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
 }

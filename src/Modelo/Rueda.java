@@ -10,12 +10,12 @@ package Modelo;
  */
 public class Rueda {
     //aleatoriedad 
-    public int aleatorio(int numero){
-    
-     
-    return numero;
-    }
-    public void crearCasilla(){
+    public int aleatorio()
+    {
+        int min = 0;
+        int max = 36;
+        int randomValue = (int) (Math.random() * (max - min + 1)) + min;
+        return randomValue ;
     }
     
     
