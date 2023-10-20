@@ -58,7 +58,6 @@ public class Ruleta extends javax.swing.JFrame {
         diez = new javax.swing.JLabel();
         once = new javax.swing.JLabel();
         doce = new javax.swing.JLabel();
-        cuatro_nums = new javax.swing.JLabel();
         trece = new javax.swing.JLabel();
         catorce = new javax.swing.JLabel();
         quince = new javax.swing.JLabel();
@@ -102,37 +101,86 @@ public class Ruleta extends javax.swing.JFrame {
         tres_seis = new javax.swing.JLabel();
         dos_cinco = new javax.swing.JLabel();
         uno_cuatro = new javax.swing.JLabel();
+        seis_nueve = new javax.swing.JLabel();
+        cinco_ocho = new javax.swing.JLabel();
+        cuatro_siete = new javax.swing.JLabel();
+        nueve_doce = new javax.swing.JLabel();
+        ocho_once = new javax.swing.JLabel();
+        siete_diez = new javax.swing.JLabel();
+        doce_quince = new javax.swing.JLabel();
+        once_catorce = new javax.swing.JLabel();
+        diez_trece = new javax.swing.JLabel();
+        quince_dieciocho = new javax.swing.JLabel();
+        catorce_diecisiete = new javax.swing.JLabel();
+        trece_dieciseis = new javax.swing.JLabel();
+        dieciocho_ventiuno = new javax.swing.JLabel();
+        diecisiete_veinte = new javax.swing.JLabel();
+        deiciseis_diecinueve = new javax.swing.JLabel();
+        ventiuno_cuatro = new javax.swing.JLabel();
+        veinte_tres = new javax.swing.JLabel();
+        diecinueve_dos = new javax.swing.JLabel();
+        venticuatro_siete = new javax.swing.JLabel();
+        ventitres_seis = new javax.swing.JLabel();
+        ventidos_cinco = new javax.swing.JLabel();
+        ventisiete_treinta = new javax.swing.JLabel();
+        ventiseis_nueve = new javax.swing.JLabel();
+        venticinco_ocho = new javax.swing.JLabel();
+        treinta_tress = new javax.swing.JLabel();
+        ventinueve_dos = new javax.swing.JLabel();
+        ventiocho_uno = new javax.swing.JLabel();
+        treintatres_seis = new javax.swing.JLabel();
+        treintados_cinco = new javax.swing.JLabel();
+        treintauno_cuatro = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        Mesita = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        Mesita = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CASINO UMSS");
@@ -158,7 +206,7 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
 
         ruletita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ruletita3.png"))); // NOI18N
-        jPanel1.add(ruletita, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 310, 300));
+        jPanel1.add(ruletita, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 310, 300));
         jPanel1.add(cero, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 30, 30));
         jPanel1.add(uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, 20, 30));
 
@@ -174,7 +222,6 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(diez, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, 20, 30));
         jPanel1.add(once, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 20, 30));
         jPanel1.add(doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 20, 40));
-        jPanel1.add(cuatro_nums, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 30, 10));
         jPanel1.add(trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 10, 30));
         jPanel1.add(catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, 10, 30));
         jPanel1.add(quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, 10, 20));
@@ -213,104 +260,193 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(ter_fila, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 320, 20, 40));
 
         fichita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fichitas.png"))); // NOI18N
-        jPanel1.add(fichita, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 590, 290));
+        jPanel1.add(fichita, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, 280));
         jPanel1.add(cero_tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 326, 20, 20));
         jPanel1.add(cero_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 376, 20, 20));
         jPanel1.add(cero_uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 20, 30));
         jPanel1.add(tres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 10, 20));
         jPanel1.add(dos_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 10, 20));
         jPanel1.add(uno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 10, 20));
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 320, 10, 30));
+        jPanel1.add(seis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 320, 10, 30));
+        jPanel1.add(cinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 370, 10, 28));
+        jPanel1.add(cuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 420, 10, 30));
+        jPanel1.add(nueve_doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 10, 30));
+        jPanel1.add(ocho_once, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 369, 9, 35));
+        jPanel1.add(siete_diez, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 420, 10, 30));
+        jPanel1.add(doce_quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 319, 10, 30));
+        jPanel1.add(once_catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 372, 10, 30));
+        jPanel1.add(diez_trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 421, 10, 30));
+        jPanel1.add(quince_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 321, 10, 30));
+        jPanel1.add(catorce_diecisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 372, 9, 29));
+        jPanel1.add(trece_dieciseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 422, 10, 30));
+        jPanel1.add(dieciocho_ventiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 324, 10, 30));
+        jPanel1.add(diecisiete_veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 374, 10, 28));
+        jPanel1.add(deiciseis_diecinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 424, 10, 30));
+        jPanel1.add(ventiuno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 325, 10, 30));
+        jPanel1.add(veinte_tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 373, 10, 30));
+        jPanel1.add(diecinueve_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 426, 10, 30));
+        jPanel1.add(venticuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 325, 10, 30));
+        jPanel1.add(ventitres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 372, 10, 30));
+        jPanel1.add(ventidos_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 422, 10, 30));
+        jPanel1.add(ventisiete_treinta, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 324, 10, 30));
+        jPanel1.add(ventiseis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 373, 10, 30));
+        jPanel1.add(venticinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 420, 10, 30));
+        jPanel1.add(treinta_tress, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 323, 10, 30));
+        jPanel1.add(ventinueve_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 374, 10, 30));
+        jPanel1.add(ventiocho_uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 422, 10, 30));
+        jPanel1.add(treintatres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(786, 320, 10, 30));
+        jPanel1.add(treintados_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 374, 10, 30));
+        jPanel1.add(treintauno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 422, 10, 30));
 
-        jLabel10.setText("jLabel10");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, -1, -1));
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
 
-        jLabel11.setText("jLabel11");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, -1, -1));
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 153), 2));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 355, 11, 18));
 
-        jLabel12.setText("jLabel12");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, -1, -1));
+        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 402, 11, 18));
 
-        jLabel13.setText("jLabel13");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, -1, -1));
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 359, 20, 8));
 
-        jLabel14.setText("jLabel14");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 420, -1, -1));
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 407, 20, 8));
+
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 407, 20, 8));
+
+        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 359, 20, 8));
+
+        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 359, 20, 8));
+
+        jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(488, 407, 20, 8));
+
+        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 407, 20, 8));
+
+        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(519, 359, 20, 8));
+
+        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 407, 20, 8));
+
+        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 359, 20, 8));
+
+        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 407, 20, 8));
+
+        jLabel17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 359, 20, 8));
+
+        jLabel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 407, 20, 8));
+
+        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 359, 20, 8));
+
+        jLabel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 407, 20, 8));
+
+        jLabel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 359, 20, 8));
+
+        jLabel22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 204), 2));
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 359, 20, 8));
+
+        jLabel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 407, 20, 8));
+
+        jLabel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 359, 20, 8));
+
+        jLabel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 359, 20, 8));
+
+        jLabel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 359, 20, 8));
+
+        jLabel27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 407, 20, 8));
+
+        jLabel39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 407, 20, 8));
+
+        jLabel40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jPanel1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 407, 20, 8));
+
+        jLabel41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
+
+        jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 406, 16, 10));
+
+        jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 358, 14, 10));
+
+        jLabel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 406, 14, 10));
+
+        jLabel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 406, 14, 10));
+
+        jLabel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 358, 13, 10));
+
+        jLabel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 406, 15, 10));
+
+        jLabel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 358, 15, 10));
+
+        jLabel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 406, 14, 10));
+
+        jLabel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 358, 14, 10));
+
+        jLabel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 358, 13, 10));
+
+        jLabel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 406, 13, 10));
+
+        jLabel53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 358, 15, 10));
+
+        jLabel54.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 406, 14, 10));
+
+        jLabel55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 358, 11, 10));
+
+        jLabel56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(508, 406, 13, 10));
+
+        jLabel57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 358, 15, 10));
+
+        jLabel58.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(611, 406, 14, 10));
+
+        jLabel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 358, 14, 10));
+
+        jLabel60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 406, 15, 10));
+
+        jLabel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 358, 10, 10));
+
+        jLabel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 406, 10, 10));
 
         Mesita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/mesa2.jpeg"))); // NOI18N
         jPanel1.add(Mesita, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 520, 260));
-
-        jLabel15.setText("jLabel15");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, -1, -1));
-
-        jLabel16.setText("jLabel16");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, -1, -1));
-
-        jLabel17.setText("jLabel17");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, -1, -1));
-
-        jLabel18.setText("jLabel18");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
-
-        jLabel19.setText("jLabel19");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, -1, -1));
-
-        jLabel20.setText("jLabel20");
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, -1, -1));
-
-        jLabel23.setText("jLabel23");
-        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, -1, -1));
-
-        jLabel24.setText("jLabel24");
-        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
-
-        jLabel25.setText("jLabel25");
-        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 430, -1, -1));
-
-        jLabel21.setText("jLabel21");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 330, -1, -1));
-
-        jLabel22.setText("jLabel22");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 380, -1, -1));
-
-        jLabel26.setText("jLabel26");
-        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 430, -1, -1));
-
-        jLabel27.setText("jLabel27");
-        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, -1, -1));
-
-        jLabel28.setText("jLabel28");
-        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, -1, -1));
-
-        jLabel29.setText("jLabel29");
-        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, -1, -1));
-
-        jLabel30.setText("jLabel30");
-        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, -1, -1));
-
-        jLabel31.setText("jLabel31");
-        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 380, -1, -1));
-
-        jLabel32.setText("jLabel32");
-        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, -1, -1));
-
-        jLabel33.setText("jLabel33");
-        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 330, -1, -1));
-
-        jLabel34.setText("jLabel34");
-        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 380, -1, -1));
-
-        jLabel35.setText("jLabel35");
-        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 430, -1, -1));
-
-        jLabel36.setText("jLabel36");
-        jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 330, -1, -1));
-
-        jLabel37.setText("jLabel37");
-        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, -1, -1));
-
-        jLabel38.setText("jLabel38");
-        jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 420, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -380,19 +516,27 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JButton Empezar;
     private javax.swing.JLabel Mesita;
     private javax.swing.JLabel catorce;
+    private javax.swing.JLabel catorce_diecisiete;
     private javax.swing.JLabel cero;
     private javax.swing.JLabel cero_dos;
     private javax.swing.JLabel cero_tres;
     private javax.swing.JLabel cero_uno;
     private javax.swing.JLabel cinco;
+    private javax.swing.JLabel cinco_ocho;
     private javax.swing.JLabel cuatro;
-    private javax.swing.JLabel cuatro_nums;
+    private javax.swing.JLabel cuatro_siete;
+    private javax.swing.JLabel deiciseis_diecinueve;
     private javax.swing.JLabel diecinueve;
+    private javax.swing.JLabel diecinueve_dos;
     private javax.swing.JLabel dieciocho;
+    private javax.swing.JLabel dieciocho_ventiuno;
     private javax.swing.JLabel dieciseis;
     private javax.swing.JLabel diecisiete;
+    private javax.swing.JLabel diecisiete_veinte;
     private javax.swing.JLabel diez;
+    private javax.swing.JLabel diez_trece;
     private javax.swing.JLabel doce;
+    private javax.swing.JLabel doce_quince;
     private javax.swing.JLabel dos;
     private javax.swing.JLabel dos_cinco;
     private javax.swing.JLabel dos_docena;
@@ -418,37 +562,67 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel negrito;
     private javax.swing.JLabel nueve;
+    private javax.swing.JLabel nueve_doce;
     private javax.swing.JLabel ocho;
+    private javax.swing.JLabel ocho_once;
     private javax.swing.JLabel once;
+    private javax.swing.JLabel once_catorce;
     private javax.swing.JLabel pair;
     private javax.swing.JLabel pri_docena;
     private javax.swing.JLabel prim_dieciocho;
     private javax.swing.JLabel prim_fila;
     private javax.swing.JLabel quince;
+    private javax.swing.JLabel quince_dieciocho;
     private javax.swing.JLabel rojito;
     private javax.swing.JLabel ruletita;
     private javax.swing.JLabel seg_dieciocho;
     private javax.swing.JLabel seg_fila;
     private javax.swing.JLabel seis;
+    private javax.swing.JLabel seis_nueve;
     private javax.swing.JLabel siete;
+    private javax.swing.JLabel siete_diez;
     private javax.swing.JLabel ter_fila;
     private javax.swing.JLabel trece;
+    private javax.swing.JLabel trece_dieciseis;
     private javax.swing.JLabel treinta;
+    private javax.swing.JLabel treinta_tress;
+    private javax.swing.JLabel treintados_cinco;
+    private javax.swing.JLabel treintatres_seis;
+    private javax.swing.JLabel treintauno_cuatro;
     private javax.swing.JLabel trentacinco;
     private javax.swing.JLabel trentacuatro;
     private javax.swing.JLabel trentados;
@@ -461,14 +635,24 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel uno;
     private javax.swing.JLabel uno_cuatro;
     private javax.swing.JLabel veinte;
+    private javax.swing.JLabel veinte_tres;
     private javax.swing.JLabel veintiuno;
     private javax.swing.JLabel venticinco;
+    private javax.swing.JLabel venticinco_ocho;
     private javax.swing.JLabel venticuatro;
+    private javax.swing.JLabel venticuatro_siete;
     private javax.swing.JLabel ventidos;
+    private javax.swing.JLabel ventidos_cinco;
     private javax.swing.JLabel ventinueve;
+    private javax.swing.JLabel ventinueve_dos;
     private javax.swing.JLabel ventiocho;
+    private javax.swing.JLabel ventiocho_uno;
     private javax.swing.JLabel ventiseis;
+    private javax.swing.JLabel ventiseis_nueve;
     private javax.swing.JLabel ventisiete;
+    private javax.swing.JLabel ventisiete_treinta;
     private javax.swing.JLabel ventitres;
+    private javax.swing.JLabel ventitres_seis;
+    private javax.swing.JLabel ventiuno_cuatro;
     // End of variables declaration//GEN-END:variables
 }
