@@ -6,24 +6,28 @@ package Modelo;
 
 /**
  *
- * @author Windows 10
+ * Ariel Vera, Marcia Lafuente V1
  */
-public class CasillaVerde implements Casillero{
+public class CasillaVerde implements Casillero {
     private String color="verde";
+    private int numero=0;
 
     @Override
     public boolean isCasillero(int numero) {
         if (numero==0){
             return true;
-        }else{
-            return false;
         }
+        return false;
     }
+
     public String getColor() {
         return color;
     }
-    public void setColor(String color) {
-        this.color = color;
+
+    public int getNumero() {
+        return numero;
     }
+    
+    
     
 }
