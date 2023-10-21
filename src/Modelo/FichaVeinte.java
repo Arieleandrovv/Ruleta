@@ -18,6 +18,9 @@ public class FichaVeinte extends Ficha {
     public int sumarFichaVeinte(int monto){
         return monto+20;
     }
+    public int restarFichaVeinte(int monto){
+        return monto-20;
+    }
 
     @Override
     public String toString() {

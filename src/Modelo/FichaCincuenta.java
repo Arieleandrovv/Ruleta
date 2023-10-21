@@ -16,6 +16,9 @@ public class FichaCincuenta extends Ficha{
     public int sumarFichaCincuenta(int monto){
         return monto+50;
     }
+    public int restarFichaCincuenta(int monto){
+        return monto-50;
+    }
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

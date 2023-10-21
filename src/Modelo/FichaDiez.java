@@ -18,6 +18,9 @@ public class FichaDiez extends Ficha {
     public int sumarFichaDiez(int monto){
         return monto+10;
     }
+    public int restarFichaDiez(int monto){
+        return monto-10;
+    }
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

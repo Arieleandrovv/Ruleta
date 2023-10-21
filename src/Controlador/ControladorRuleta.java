@@ -27,17 +27,30 @@ public class ControladorRuleta {
     }
     
     
-    public int sumarPilaficha(boolean a, boolean b, boolean c, boolean d, int [] numero,int index){
+    public int[] sumarPilaficha(boolean a, boolean b, boolean c, boolean d, int [] numero,int index,int montoInicial){
         int monto=0;
         if (a){
-            monto=fdiez.sumarFichaDiez(numero[index]);
+            if(montoInicial>=10){
+                monto=fdiez.sumarFichaDiez(numero[index]);
+                montoInicial=fdiez.restarFichaDiez(montoInicial);
+            }
         }else if (b){
-            monto=fveinte.sumarFichaVeinte(numero[index]);
+            if(montoInicial>=20){
+                monto=fveinte.sumarFichaVeinte(numero[index]);
+                montoInicial=fveinte.restarFichaVeinte(montoInicial);
+            }
         }else if (c){
-            monto=fcincuenta.sumarFichaCincuenta(numero[index]);
+            if(montoInicial>=50){
+                monto=fcincuenta.sumarFichaCincuenta(numero[index]);
+                montoInicial=fcincuenta.restarFichaCincuenta(montoInicial);
+            }
         }else if (d){
-            monto=fcien.sumarFichaCien(numero[index]);
+            if(montoInicial>=100){
+                monto=fcien.sumarFichaCien(numero[index]);
+                montoInicial=fcien.restarFichaCien(montoInicial);
+            }
         }
-        return monto;
+        int [] valores={monto,montoInicial};
+        return valores;
     }
 }
