@@ -39,6 +39,8 @@ public class Ruleta extends javax.swing.JFrame {
     int[] arregloMitad;
     int[] arregloDocena;
     int[] arregloColumna;
+    int[] arregloTripleNumero;
+    int[] arregloDobleNumero;
     ReglasRuleta apuesta;
     Rueda ruedaGirando;
     ControladorRuleta controladorJuego;
@@ -71,6 +73,8 @@ public class Ruleta extends javax.swing.JFrame {
         arregloMitad = new int[2];
         arregloDocena = new int[3];
         arregloColumna=new int[3];
+        arregloTripleNumero=new int[2];
+        arregloDobleNumero=new int[57];
         montoMesa=0;
         cantidadFicha=40;
         jLabelMonto.setText(cantidadFicha+"");
@@ -144,9 +148,9 @@ public class Ruleta extends javax.swing.JFrame {
         cero_tres = new javax.swing.JLabel();
         cero_dos = new javax.swing.JLabel();
         cero_uno = new javax.swing.JLabel();
-        tres_seis = new javax.swing.JLabel();
-        dos_cinco = new javax.swing.JLabel();
-        uno_cuatro = new javax.swing.JLabel();
+        jLabel3_6 = new javax.swing.JLabel();
+        jLabel2_5 = new javax.swing.JLabel();
+        jLabel1_4 = new javax.swing.JLabel();
         seis_nueve = new javax.swing.JLabel();
         cinco_ocho = new javax.swing.JLabel();
         cuatro_siete = new javax.swing.JLabel();
@@ -178,12 +182,12 @@ public class Ruleta extends javax.swing.JFrame {
         treintados_cinco = new javax.swing.JLabel();
         treintauno_cuatro = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        jLabel023 = new javax.swing.JLabel();
+        jLabel012 = new javax.swing.JLabel();
+        jLabel2_3 = new javax.swing.JLabel();
+        jLabel2_1 = new javax.swing.JLabel();
+        cuatro_cinco = new javax.swing.JLabel();
+        cinco_seis = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -615,11 +619,47 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(cero_tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 326, 20, 20));
         jPanel1.add(cero_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 376, 20, 20));
         jPanel1.add(cero_uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 20, 30));
-        jPanel1.add(tres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 10, 20));
-        jPanel1.add(dos_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 10, 20));
-        jPanel1.add(uno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 10, 20));
+
+        jLabel3_6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3_6MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel3_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 10, 20));
+
+        jLabel2_5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2_5MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel2_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 10, 20));
+
+        jLabel1_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1_4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 10, 20));
+
+        seis_nueve.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seis_nueveMouseClicked(evt);
+            }
+        });
         jPanel1.add(seis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 320, 10, 30));
+
+        cinco_ocho.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cinco_ochoMouseClicked(evt);
+            }
+        });
         jPanel1.add(cinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 370, 10, 28));
+
+        cuatro_siete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cuatro_sieteMouseClicked(evt);
+            }
+        });
         jPanel1.add(cuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 420, 10, 30));
         jPanel1.add(nueve_doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 10, 30));
         jPanel1.add(ocho_once, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 369, 9, 35));
@@ -652,23 +692,53 @@ public class Ruleta extends javax.swing.JFrame {
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
 
-        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 153), 2));
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 355, 11, 18));
+        jLabel023.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 153), 2));
+        jLabel023.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel023MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel023, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 355, 11, 18));
 
-        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 402, 11, 18));
+        jLabel012.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
+        jLabel012.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel012MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel012, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 402, 11, 18));
 
-        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 359, 20, 8));
+        jLabel2_3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
+        jLabel2_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2_3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 359, 20, 8));
 
-        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 407, 20, 8));
+        jLabel2_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        jLabel2_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2_1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 407, 20, 8));
 
-        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 407, 20, 8));
+        cuatro_cinco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        cuatro_cinco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cuatro_cincoMouseClicked(evt);
+            }
+        });
+        jPanel1.add(cuatro_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 407, 20, 8));
 
-        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 359, 20, 8));
+        cinco_seis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
+        cinco_seis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cinco_seisMouseClicked(evt);
+            }
+        });
+        jPanel1.add(cinco_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 359, 20, 8));
 
         jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 359, 20, 8));
@@ -876,7 +946,10 @@ public class Ruleta extends javax.swing.JFrame {
         int numBajoAlto=0;
         int numDocena=0;
         int numColumna=0;
+        int numTriple=0;
+        int numDoble;
         
+        numero=1;
         if(cane.isCasillero(numero)){            
             jLabel2.setText(cane.getColor());
         }else if(caro.isCasillero(numero)){
@@ -884,6 +957,7 @@ public class Ruleta extends javax.swing.JFrame {
         }else if (cave.isCasillero(numero)){            
             jLabel2.setText(cave.getColor());
         }
+        
         
         jLabel1.setText(numero+"");
         //logica numero numIndividual
@@ -898,11 +972,15 @@ public class Ruleta extends javax.swing.JFrame {
         numDocena=controladorJuego.apuestaDocena(numero, arregloDocena);
         // logica arregloColumna
         numColumna=controladorJuego.apuestaColumna(numero, arregloColumna);
+        //logica apuesta triple
+        numTriple=controladorJuego.apuestaTriple(numero, arregloTripleNumero);
+        //logica apuesta doble numero
+        numDoble=controladorJuego.apuestaDoble(numero, arregloDobleNumero);
         System.out.println(numColumna);
         //resultado
-        cantidadFicha=cantidadFicha+numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna;
+        cantidadFicha=cantidadFicha+numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+numTriple+numDoble;
         
-        jLabelGanancia.setText(numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+"");
+        jLabelGanancia.setText(numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+numTriple+numDoble+"");
         jLabelMonto.setText(cantidadFicha+"");
         //reiniciando
         arregloMesa = new int[37];
@@ -911,7 +989,8 @@ public class Ruleta extends javax.swing.JFrame {
         arregloMitad = new int[2];
         arregloDocena=new int[3];
         arregloColumna=new int[3];
-        
+        arregloTripleNumero = new int[2];
+        arregloDobleNumero=new int[57];
     }//GEN-LAST:event_EmpezarActionPerformed
 
     private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked
@@ -1287,6 +1366,90 @@ public class Ruleta extends javax.swing.JFrame {
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ter_filaMouseClicked
 
+    private void jLabel023MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel023MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloTripleNumero, 0,cantidadFicha);
+        arregloTripleNumero[0]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel023MouseClicked
+
+    private void jLabel012MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel012MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloTripleNumero, 1,cantidadFicha);
+        arregloTripleNumero[1]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel012MouseClicked
+
+    private void jLabel2_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2_3MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 1,cantidadFicha);
+        arregloDobleNumero[1]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel2_3MouseClicked
+
+    private void jLabel2_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2_1MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 0,cantidadFicha);
+        arregloDobleNumero[0]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel2_1MouseClicked
+
+    private void jLabel3_6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3_6MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 4,cantidadFicha);
+        arregloDobleNumero[4]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel3_6MouseClicked
+
+    private void jLabel2_5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2_5MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 3,cantidadFicha);
+        arregloDobleNumero[3]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel2_5MouseClicked
+
+    private void jLabel1_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1_4MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 2,cantidadFicha);
+        arregloDobleNumero[2]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel1_4MouseClicked
+
+    private void cuatro_cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatro_cincoMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 5,cantidadFicha);
+        arregloDobleNumero[5]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_cuatro_cincoMouseClicked
+
+    private void cinco_seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cinco_seisMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 6,cantidadFicha);
+        arregloDobleNumero[6]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_cinco_seisMouseClicked
+
+    private void cuatro_sieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatro_sieteMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 7,cantidadFicha);
+        arregloDobleNumero[7]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_cuatro_sieteMouseClicked
+
+    private void cinco_ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cinco_ochoMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 8,cantidadFicha);
+        arregloDobleNumero[8]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_cinco_ochoMouseClicked
+
+    private void seis_nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seis_nueveMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDobleNumero, 9,cantidadFicha);
+        arregloDobleNumero[9]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_seis_nueveMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1333,7 +1496,9 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel cero_uno;
     private javax.swing.JLabel cinco;
     private javax.swing.JLabel cinco_ocho;
+    private javax.swing.JLabel cinco_seis;
     private javax.swing.JLabel cuatro;
+    private javax.swing.JLabel cuatro_cinco;
     private javax.swing.JLabel cuatro_siete;
     private javax.swing.JLabel deiciseis_diecinueve;
     private javax.swing.JLabel diecinueve;
@@ -1348,7 +1513,6 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel doce;
     private javax.swing.JLabel doce_quince;
     private javax.swing.JLabel dos;
-    private javax.swing.JLabel dos_cinco;
     private javax.swing.JLabel dos_docena;
     private javax.swing.JLabel fichita;
     private javax.swing.JLabel impair;
@@ -1356,6 +1520,8 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton50;
+    private javax.swing.JLabel jLabel012;
+    private javax.swing.JLabel jLabel023;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1367,6 +1533,7 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel1_4;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
@@ -1378,13 +1545,16 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel2_1;
+    private javax.swing.JLabel jLabel2_3;
+    private javax.swing.JLabel jLabel2_5;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel3_6;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -1395,7 +1565,6 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -1406,13 +1575,9 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelGanancia;
     private javax.swing.JLabel jLabelMonto;
     private javax.swing.JPanel jPanel1;
@@ -1453,9 +1618,7 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel trentauno;
     private javax.swing.JLabel tres;
     private javax.swing.JLabel tres_docena;
-    private javax.swing.JLabel tres_seis;
     private javax.swing.JLabel uno;
-    private javax.swing.JLabel uno_cuatro;
     private javax.swing.JLabel veinte;
     private javax.swing.JLabel veinte_tres;
     private javax.swing.JLabel veintiuno;

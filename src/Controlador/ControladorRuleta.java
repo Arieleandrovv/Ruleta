@@ -119,6 +119,51 @@ public class ControladorRuleta {
             return apuesta.apuestaColumna(arreglo[2]);
         }
     }
+    public int apuestaTriple(int numero, int [] arreglo){
+        int valor=0;
+        if (numero==0 || numero==3 || numero==2 ){
+            valor=apuesta.apuestaTriple(arreglo[0]);
+        }
+        if(numero==0 || numero==2 || numero==1){
+            valor=valor+apuesta.apuestaTriple(arreglo[1]);
+        }
+        return valor;
+    }
+    
+    public int apuestaDoble(int numero, int [] arreglo){
+        int valor=0;
+        if (numero==1 || numero==2){
+            valor=apuesta.apuestaDoble(arreglo[0]);
+        }
+        if(numero==2 || numero==3){
+            valor=valor+apuesta.apuestaDoble(arreglo[1]);
+        }
+        if(numero==1 || numero==4){
+            valor=valor+apuesta.apuestaDoble(arreglo[2]);
+        }
+        if(numero==2 || numero==5){
+            valor=valor+apuesta.apuestaDoble(arreglo[3]);
+        }
+        if(numero==3 || numero==6){
+            valor=valor+apuesta.apuestaDoble(arreglo[4]);
+        }
+        if(numero==4 || numero==5){
+            valor=valor+apuesta.apuestaDoble(arreglo[5]);
+        }
+        if(numero==5 || numero==6){
+            valor=valor+apuesta.apuestaDoble(arreglo[6]);
+        }
+        if(numero==4 || numero==7){
+            valor=valor+apuesta.apuestaDoble(arreglo[7]);
+        }
+        if(numero==5 || numero==8){
+            valor=valor+apuesta.apuestaDoble(arreglo[8]);
+        }
+        if(numero==6 || numero==9){
+            valor=valor+apuesta.apuestaDoble(arreglo[9]);
+        }
+        return valor;
+    }
     
     private boolean isInColumna(int numero, int [] columna){
         for(int x=0; x<columna.length;x++){
