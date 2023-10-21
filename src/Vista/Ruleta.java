@@ -247,6 +247,12 @@ public class Ruleta extends javax.swing.JFrame {
 
         ruletita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ruletita3.png"))); // NOI18N
         jPanel1.add(ruletita, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 310, 300));
+
+        cero.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ceroMouseClicked(evt);
+            }
+        });
         jPanel1.add(cero, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 30, 30));
 
         uno.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -270,38 +276,236 @@ public class Ruleta extends javax.swing.JFrame {
             }
         });
         jPanel1.add(tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 20, 20));
+
+        cuatro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cuatroMouseClicked(evt);
+            }
+        });
         jPanel1.add(cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, 20, 30));
+
+        cinco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cincoMouseClicked(evt);
+            }
+        });
         jPanel1.add(cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 20, 30));
+
+        seis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seisMouseClicked(evt);
+            }
+        });
         jPanel1.add(seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 320, 20, 30));
+
+        siete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sieteMouseClicked(evt);
+            }
+        });
         jPanel1.add(siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 20, 30));
+
+        ocho.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ochoMouseClicked(evt);
+            }
+        });
         jPanel1.add(ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 20, 30));
+
+        nueve.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                nueveMouseClicked(evt);
+            }
+        });
         jPanel1.add(nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 20, 30));
+
+        diez.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                diezMouseClicked(evt);
+            }
+        });
         jPanel1.add(diez, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, 20, 30));
+
+        once.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                onceMouseClicked(evt);
+            }
+        });
         jPanel1.add(once, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 20, 30));
+
+        doce.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                doceMouseClicked(evt);
+            }
+        });
         jPanel1.add(doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 20, 40));
+
+        trece.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                treceMouseClicked(evt);
+            }
+        });
         jPanel1.add(trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 10, 30));
+
+        catorce.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                catorceMouseClicked(evt);
+            }
+        });
         jPanel1.add(catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, 10, 30));
+
+        quince.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                quinceMouseClicked(evt);
+            }
+        });
         jPanel1.add(quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, 10, 20));
+
+        dieciseis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dieciseisMouseClicked(evt);
+            }
+        });
         jPanel1.add(dieciseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 430, 20, 20));
+
+        diecisiete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                diecisieteMouseClicked(evt);
+            }
+        });
         jPanel1.add(diecisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 370, 20, 30));
+
+        dieciocho.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dieciochoMouseClicked(evt);
+            }
+        });
         jPanel1.add(dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 330, 20, 20));
+
+        diecinueve.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                diecinueveMouseClicked(evt);
+            }
+        });
         jPanel1.add(diecinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 420, 10, 30));
+
+        veinte.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                veinteMouseClicked(evt);
+            }
+        });
         jPanel1.add(veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 370, 10, 30));
+
+        veintiuno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                veintiunoMouseClicked(evt);
+            }
+        });
         jPanel1.add(veintiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 10, 30));
+
+        ventidos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ventidosMouseClicked(evt);
+            }
+        });
         jPanel1.add(ventidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 420, 20, 30));
+
+        ventitres.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ventitresMouseClicked(evt);
+            }
+        });
         jPanel1.add(ventitres, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, 20, 30));
+
+        venticuatro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                venticuatroMouseClicked(evt);
+            }
+        });
         jPanel1.add(venticuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, 20, 30));
+
+        venticinco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                venticincoMouseClicked(evt);
+            }
+        });
         jPanel1.add(venticinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 420, 10, 30));
+
+        ventiseis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ventiseisMouseClicked(evt);
+            }
+        });
         jPanel1.add(ventiseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 370, 10, 30));
+
+        ventisiete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ventisieteMouseClicked(evt);
+            }
+        });
         jPanel1.add(ventisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, 10, 30));
+
+        ventiocho.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ventiochoMouseClicked(evt);
+            }
+        });
         jPanel1.add(ventiocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 420, 20, 30));
+
+        ventinueve.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ventinueveMouseClicked(evt);
+            }
+        });
         jPanel1.add(ventinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 370, 20, 30));
+
+        treinta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                treintaMouseClicked(evt);
+            }
+        });
         jPanel1.add(treinta, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 330, 20, 20));
+
+        trentauno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                trentaunoMouseClicked(evt);
+            }
+        });
         jPanel1.add(trentauno, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 426, 20, 20));
+
+        trentados.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                trentadosMouseClicked(evt);
+            }
+        });
         jPanel1.add(trentados, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 370, 20, 30));
+
+        trentatres.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                trentatresMouseClicked(evt);
+            }
+        });
         jPanel1.add(trentatres, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, 20, 20));
+
+        trentacuatro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                trentacuatroMouseClicked(evt);
+            }
+        });
         jPanel1.add(trentacuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 420, 20, 30));
+
+        trentacinco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                trentacincoMouseClicked(evt);
+            }
+        });
         jPanel1.add(trentacinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 370, 20, 30));
+
+        trentaseis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                trentaseisMouseClicked(evt);
+            }
+        });
         jPanel1.add(trentaseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 330, 20, 20));
         jPanel1.add(rojito, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 50, 20));
         jPanel1.add(negrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 50, 20));
@@ -625,6 +829,142 @@ public class Ruleta extends javax.swing.JFrame {
     private void dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dosMouseClicked
         apuestaMesa[2]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 2);
     }//GEN-LAST:event_dosMouseClicked
+
+    private void seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seisMouseClicked
+        apuestaMesa[6]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 6);
+    }//GEN-LAST:event_seisMouseClicked
+
+    private void cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cincoMouseClicked
+        apuestaMesa[5]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 5);
+    }//GEN-LAST:event_cincoMouseClicked
+
+    private void cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMouseClicked
+        apuestaMesa[4]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 4);
+    }//GEN-LAST:event_cuatroMouseClicked
+
+    private void nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nueveMouseClicked
+        apuestaMesa[9]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 9);
+    }//GEN-LAST:event_nueveMouseClicked
+
+    private void ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ochoMouseClicked
+        apuestaMesa[8]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 8);
+    }//GEN-LAST:event_ochoMouseClicked
+
+    private void sieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sieteMouseClicked
+        apuestaMesa[7]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 7);
+    }//GEN-LAST:event_sieteMouseClicked
+
+    private void doceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doceMouseClicked
+        apuestaMesa[12]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 12);
+    }//GEN-LAST:event_doceMouseClicked
+
+    private void onceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_onceMouseClicked
+        apuestaMesa[11]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 11);
+    }//GEN-LAST:event_onceMouseClicked
+
+    private void diezMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diezMouseClicked
+        apuestaMesa[10]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 10);
+    }//GEN-LAST:event_diezMouseClicked
+
+    private void ceroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ceroMouseClicked
+        apuestaMesa[0]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 0);
+    }//GEN-LAST:event_ceroMouseClicked
+
+    private void quinceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quinceMouseClicked
+        apuestaMesa[15]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 15);
+    }//GEN-LAST:event_quinceMouseClicked
+
+    private void catorceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_catorceMouseClicked
+        apuestaMesa[14]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 14);
+    }//GEN-LAST:event_catorceMouseClicked
+
+    private void treceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treceMouseClicked
+        apuestaMesa[13]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 13);
+    }//GEN-LAST:event_treceMouseClicked
+
+    private void dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciochoMouseClicked
+        apuestaMesa[18]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 18);
+    }//GEN-LAST:event_dieciochoMouseClicked
+
+    private void diecisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecisieteMouseClicked
+        apuestaMesa[17]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 17);
+    }//GEN-LAST:event_diecisieteMouseClicked
+
+    private void dieciseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciseisMouseClicked
+        apuestaMesa[16]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 16);
+    }//GEN-LAST:event_dieciseisMouseClicked
+
+    private void diecinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecinueveMouseClicked
+        apuestaMesa[19]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 19);
+    }//GEN-LAST:event_diecinueveMouseClicked
+
+    private void veinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinteMouseClicked
+        apuestaMesa[20]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 20);
+    }//GEN-LAST:event_veinteMouseClicked
+
+    private void veintiunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintiunoMouseClicked
+        apuestaMesa[21]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 21);
+    }//GEN-LAST:event_veintiunoMouseClicked
+
+    private void ventidosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventidosMouseClicked
+        apuestaMesa[22]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 22);
+    }//GEN-LAST:event_ventidosMouseClicked
+
+    private void ventitresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventitresMouseClicked
+        apuestaMesa[23]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 23);
+    }//GEN-LAST:event_ventitresMouseClicked
+
+    private void venticuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticuatroMouseClicked
+        apuestaMesa[24]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 24);
+    }//GEN-LAST:event_venticuatroMouseClicked
+
+    private void venticincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticincoMouseClicked
+        apuestaMesa[25]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 25);
+    }//GEN-LAST:event_venticincoMouseClicked
+
+    private void ventiseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiseisMouseClicked
+        apuestaMesa[26]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 26);
+    }//GEN-LAST:event_ventiseisMouseClicked
+
+    private void ventisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventisieteMouseClicked
+        apuestaMesa[27]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 27);
+    }//GEN-LAST:event_ventisieteMouseClicked
+
+    private void ventiochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiochoMouseClicked
+        apuestaMesa[28]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 28);
+    }//GEN-LAST:event_ventiochoMouseClicked
+
+    private void ventinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventinueveMouseClicked
+        apuestaMesa[29]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 29);
+    }//GEN-LAST:event_ventinueveMouseClicked
+
+    private void treintaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treintaMouseClicked
+        apuestaMesa[30]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 30);
+    }//GEN-LAST:event_treintaMouseClicked
+
+    private void trentaunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentaunoMouseClicked
+        apuestaMesa[31]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 31);
+    }//GEN-LAST:event_trentaunoMouseClicked
+
+    private void trentadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentadosMouseClicked
+        apuestaMesa[32]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 32);
+    }//GEN-LAST:event_trentadosMouseClicked
+
+    private void trentatresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentatresMouseClicked
+        apuestaMesa[33]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 33);
+    }//GEN-LAST:event_trentatresMouseClicked
+
+    private void trentacuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentacuatroMouseClicked
+        apuestaMesa[34]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 34);
+    }//GEN-LAST:event_trentacuatroMouseClicked
+
+    private void trentacincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentacincoMouseClicked
+        apuestaMesa[35]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 35);
+    }//GEN-LAST:event_trentacincoMouseClicked
+
+    private void trentaseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentaseisMouseClicked
+        apuestaMesa[36]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 36);
+    }//GEN-LAST:event_trentaseisMouseClicked
 
     /**
      * @param args the command line arguments
