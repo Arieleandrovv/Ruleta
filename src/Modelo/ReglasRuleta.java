@@ -21,11 +21,17 @@ public class ReglasRuleta {
     public int apuestaParImpar(int monto){
         return monto*2;
     }
-    public void apuestaBajoAlto(){
+    public int apuestaBajoAlto(int monto){
+        return monto*2;
     }
-    public void apuestaDocena(){
+    public int apuestaDocena(int monto){
+        return monto*3;
     }
-    public void apuestaColumna(){
+    public int apuestaColumna(int monto){
+        return monto*3;
+    }
+    public int apuestaTriple(int monto){
+        return monto*11;
     }
     public void apuestaLinea(){
     }

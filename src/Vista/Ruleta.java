@@ -18,7 +18,7 @@ import Modelo.ReglasRuleta;
 
 /**
  *
- * @author PC
+ * Ariel Vera y Marcia Lafuente v1
  */
 public class Ruleta extends javax.swing.JFrame {
 
@@ -33,10 +33,12 @@ public class Ruleta extends javax.swing.JFrame {
     FichaVeinte fveinte;
     FichaCincuenta fcincuenta;
     FichaCien fcien;
-    int[] apuestaMesa;
-    int[] apuestaColor;
-    int[] apuestaParImpar;
-    int[] mitad;
+    int[] arregloMesa;
+    int[] arregloColor;
+    int[] arregloParImpar;
+    int[] arregloMitad;
+    int[] arregloDocena;
+    int[] arregloColumna;
     ReglasRuleta apuesta;
     Rueda ruedaGirando;
     ControladorRuleta controladorJuego;
@@ -63,10 +65,12 @@ public class Ruleta extends javax.swing.JFrame {
         flagFicha50 = false;
         flagFicha100 = false;        
         apuesta=new ReglasRuleta();
-        apuestaMesa = new int[37];
-        apuestaColor = new int[2];
-        apuestaParImpar = new int[2];
-        mitad = new int[2];
+        arregloMesa = new int[37];
+        arregloColor = new int[2];
+        arregloParImpar = new int[2];
+        arregloMitad = new int[2];
+        arregloDocena = new int[3];
+        arregloColumna=new int[3];
         montoMesa=0;
         cantidadFicha=40;
         jLabelMonto.setText(cantidadFicha+"");
@@ -229,11 +233,12 @@ public class Ruleta extends javax.swing.JFrame {
         jButton50 = new javax.swing.JButton();
         jButton100 = new javax.swing.JButton();
         jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
+        jLabelGanancia = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabelMonto = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CASINO UMSS");
@@ -534,9 +539,33 @@ public class Ruleta extends javax.swing.JFrame {
             }
         });
         jPanel1.add(negrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 50, 20));
+
+        pri_docena.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pri_docenaMouseClicked(evt);
+            }
+        });
         jPanel1.add(pri_docena, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, 120, 20));
+
+        dos_docena.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dos_docenaMouseClicked(evt);
+            }
+        });
         jPanel1.add(dos_docena, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 470, 130, 20));
+
+        tres_docena.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tres_docenaMouseClicked(evt);
+            }
+        });
         jPanel1.add(tres_docena, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 470, 130, 20));
+
+        prim_dieciocho.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                prim_dieciochoMouseClicked(evt);
+            }
+        });
         jPanel1.add(prim_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, 70, 30));
 
         pair.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -552,9 +581,33 @@ public class Ruleta extends javax.swing.JFrame {
             }
         });
         jPanel1.add(impair, new org.netbeans.lib.awtextra.AbsoluteConstraints(688, 506, 60, 20));
+
+        seg_dieciocho.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seg_dieciochoMouseClicked(evt);
+            }
+        });
         jPanel1.add(seg_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(758, 500, 60, 30));
+
+        prim_fila.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                prim_filaMouseClicked(evt);
+            }
+        });
         jPanel1.add(prim_fila, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 416, 20, 40));
+
+        seg_fila.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seg_filaMouseClicked(evt);
+            }
+        });
         jPanel1.add(seg_fila, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 370, 20, 40));
+
+        ter_fila.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ter_filaMouseClicked(evt);
+            }
+        });
         jPanel1.add(ter_fila, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 320, 20, 40));
 
         fichita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fichitas.png"))); // NOI18N
@@ -783,9 +836,7 @@ public class Ruleta extends javax.swing.JFrame {
 
         jLabel29.setText("jLabel29");
         jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 190, -1, -1));
-
-        jLabel30.setText("jLabel30");
-        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 220, -1, -1));
+        jPanel1.add(jLabelGanancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, -1, -1));
 
         jLabel31.setText("jLabel31");
         jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 250, -1, -1));
@@ -797,6 +848,9 @@ public class Ruleta extends javax.swing.JFrame {
         jLabel33.setBackground(new java.awt.Color(255, 255, 153));
         jLabel33.setText("monto");
         jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, -1, -1));
+
+        jLabel30.setText("Ganancia");
+        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -816,44 +870,55 @@ public class Ruleta extends javax.swing.JFrame {
 
     private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
         int numero=ruedaGirando.aleatorio();
-        int color=0;
-        int parImpar=0;
-        numero =3;
+        int numIndividual=0;
+        int numColor=0;
+        int numParImpar=0;
+        int numBajoAlto=0;
+        int numDocena=0;
+        int numColumna=0;
         
-        if(cane.isCasillero(numero)){
-            color=apuesta.apuestaColor(apuestaColor[1]);
+        if(cane.isCasillero(numero)){            
             jLabel2.setText(cane.getColor());
         }else if(caro.isCasillero(numero)){
-            color=apuesta.apuestaColor(apuestaColor[0]);
             jLabel2.setText(caro.getColor());
-        }else if (cave.isCasillero(numero)){
-            
+        }else if (cave.isCasillero(numero)){            
             jLabel2.setText(cave.getColor());
         }
-        jLabel1.setText(numero+"");
-        int a=apuesta.apuestaIndividual(apuestaMesa[numero]);
-        if (numero==0){
-            parImpar=0;
-        }else if (numero%2==0){
-            parImpar=apuesta.apuestaParImpar(apuestaParImpar[0]);
-        }else{
-            parImpar=apuesta.apuestaParImpar(apuestaParImpar[1]);
-        }
-        cantidadFicha=cantidadFicha+a+color+parImpar;
         
-        jLabel30.setText(a+color+parImpar+"");
+        jLabel1.setText(numero+"");
+        //logica numero numIndividual
+        numIndividual=apuesta.apuestaIndividual(arregloMesa[numero]);      
+        //logica numColor        
+        numColor=controladorJuego.apuestaColor(numero, arregloColor);
+        //logica par impar
+        numParImpar=controladorJuego.apuestaParImpar(numero, arregloParImpar);
+        //logica alto bajo
+        numBajoAlto=controladorJuego.apuestaBajoAlto(numero, arregloMitad);        
+        // logica arregloDocena        
+        numDocena=controladorJuego.apuestaDocena(numero, arregloDocena);
+        // logica arregloColumna
+        numColumna=controladorJuego.apuestaColumna(numero, arregloColumna);
+        System.out.println(numColumna);
+        //resultado
+        cantidadFicha=cantidadFicha+numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna;
+        
+        jLabelGanancia.setText(numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+"");
         jLabelMonto.setText(cantidadFicha+"");
-        apuestaMesa = new int[37];
-        apuestaColor= new int[2];
-        apuestaParImpar = new int[2];
+        //reiniciando
+        arregloMesa = new int[37];
+        arregloColor= new int[2];
+        arregloParImpar = new int[2];
+        arregloMitad = new int[2];
+        arregloDocena=new int[3];
+        arregloColumna=new int[3];
         
     }//GEN-LAST:event_EmpezarActionPerformed
 
     private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 3,cantidadFicha);
-        apuestaMesa[3]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 3,cantidadFicha);
+        arregloMesa[3]=banco[0];
         cantidadFicha=banco[1];
-        jLabel28.setText(apuestaMesa[3]+"");
+        jLabel28.setText(arregloMesa[3]+"");
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_tresMouseClicked
 
@@ -887,284 +952,340 @@ public class Ruleta extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton100ActionPerformed
 
     private void unoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 1,cantidadFicha);
-        apuestaMesa[1]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 1,cantidadFicha);
+        arregloMesa[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_unoMouseClicked
 
     private void dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dosMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 2,cantidadFicha);
-        apuestaMesa[2]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 2,cantidadFicha);
+        arregloMesa[2]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_dosMouseClicked
 
     private void seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seisMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 6,cantidadFicha);
-        apuestaMesa[6]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 6,cantidadFicha);
+        arregloMesa[6]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_seisMouseClicked
 
     private void cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cincoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 5,cantidadFicha);
-        apuestaMesa[5]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 5,cantidadFicha);
+        arregloMesa[5]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_cincoMouseClicked
 
     private void cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 4,cantidadFicha);
-        apuestaMesa[4]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 4,cantidadFicha);
+        arregloMesa[4]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_cuatroMouseClicked
 
     private void nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nueveMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 9,cantidadFicha);
-        apuestaMesa[9]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 9,cantidadFicha);
+        arregloMesa[9]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_nueveMouseClicked
 
     private void ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ochoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 8,cantidadFicha);
-        apuestaMesa[8]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 8,cantidadFicha);
+        arregloMesa[8]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ochoMouseClicked
 
     private void sieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sieteMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 7,cantidadFicha);
-        apuestaMesa[7]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 7,cantidadFicha);
+        arregloMesa[7]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_sieteMouseClicked
 
     private void doceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doceMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 12,cantidadFicha);
-        apuestaMesa[12]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 12,cantidadFicha);
+        arregloMesa[12]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_doceMouseClicked
 
     private void onceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_onceMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 11,cantidadFicha);
-        apuestaMesa[11]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 11,cantidadFicha);
+        arregloMesa[11]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_onceMouseClicked
 
     private void diezMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diezMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 10,cantidadFicha);
-        apuestaMesa[10]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 10,cantidadFicha);
+        arregloMesa[10]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_diezMouseClicked
 
     private void ceroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ceroMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 0,cantidadFicha);
-        apuestaMesa[0]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 0,cantidadFicha);
+        arregloMesa[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ceroMouseClicked
 
     private void quinceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quinceMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 15,cantidadFicha);
-        apuestaMesa[15]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 15,cantidadFicha);
+        arregloMesa[15]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_quinceMouseClicked
 
     private void catorceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_catorceMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 14,cantidadFicha);
-        apuestaMesa[14]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 14,cantidadFicha);
+        arregloMesa[14]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_catorceMouseClicked
 
     private void treceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treceMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 13,cantidadFicha);
-        apuestaMesa[13]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 13,cantidadFicha);
+        arregloMesa[13]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_treceMouseClicked
 
     private void dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciochoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 18,cantidadFicha);
-        apuestaMesa[18]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 18,cantidadFicha);
+        arregloMesa[18]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_dieciochoMouseClicked
 
     private void diecisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecisieteMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 17,cantidadFicha);
-        apuestaMesa[17]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 17,cantidadFicha);
+        arregloMesa[17]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_diecisieteMouseClicked
 
     private void dieciseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciseisMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 16,cantidadFicha);
-        apuestaMesa[16]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 16,cantidadFicha);
+        arregloMesa[16]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_dieciseisMouseClicked
 
     private void diecinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecinueveMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 19,cantidadFicha);
-        apuestaMesa[19]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 19,cantidadFicha);
+        arregloMesa[19]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_diecinueveMouseClicked
 
     private void veinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinteMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 20,cantidadFicha);
-        apuestaMesa[20]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 20,cantidadFicha);
+        arregloMesa[20]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_veinteMouseClicked
 
     private void veintiunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintiunoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 21,cantidadFicha);
-        apuestaMesa[21]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 21,cantidadFicha);
+        arregloMesa[21]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_veintiunoMouseClicked
 
     private void ventidosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventidosMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 22,cantidadFicha);
-        apuestaMesa[22]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 22,cantidadFicha);
+        arregloMesa[22]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ventidosMouseClicked
 
     private void ventitresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventitresMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 23,cantidadFicha);
-        apuestaMesa[23]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 23,cantidadFicha);
+        arregloMesa[23]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ventitresMouseClicked
 
     private void venticuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticuatroMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 24,cantidadFicha);
-        apuestaMesa[24]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 24,cantidadFicha);
+        arregloMesa[24]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_venticuatroMouseClicked
 
     private void venticincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticincoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 25,cantidadFicha);
-        apuestaMesa[25]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 25,cantidadFicha);
+        arregloMesa[25]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_venticincoMouseClicked
 
     private void ventiseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiseisMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 26,cantidadFicha);
-        apuestaMesa[26]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 26,cantidadFicha);
+        arregloMesa[26]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ventiseisMouseClicked
 
     private void ventisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventisieteMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 27,cantidadFicha);
-        apuestaMesa[27]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 27,cantidadFicha);
+        arregloMesa[27]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ventisieteMouseClicked
 
     private void ventiochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiochoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 28,cantidadFicha);
-        apuestaMesa[28]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 28,cantidadFicha);
+        arregloMesa[28]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ventiochoMouseClicked
 
     private void ventinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventinueveMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 29,cantidadFicha);
-        apuestaMesa[29]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 29,cantidadFicha);
+        arregloMesa[29]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_ventinueveMouseClicked
 
     private void treintaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treintaMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 30,cantidadFicha);
-        apuestaMesa[7]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 30,cantidadFicha);
+        arregloMesa[7]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_treintaMouseClicked
 
     private void trentaunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentaunoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 31,cantidadFicha);
-        apuestaMesa[31]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 31,cantidadFicha);
+        arregloMesa[31]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_trentaunoMouseClicked
 
     private void trentadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentadosMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 32,cantidadFicha);
-        apuestaMesa[32]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 32,cantidadFicha);
+        arregloMesa[32]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_trentadosMouseClicked
 
     private void trentatresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentatresMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 33,cantidadFicha);
-        apuestaMesa[33]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 33,cantidadFicha);
+        arregloMesa[33]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_trentatresMouseClicked
 
     private void trentacuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentacuatroMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 34,cantidadFicha);
-        apuestaMesa[34]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 34,cantidadFicha);
+        arregloMesa[34]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_trentacuatroMouseClicked
 
     private void trentacincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentacincoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 35,cantidadFicha);
-        apuestaMesa[35]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 35,cantidadFicha);
+        arregloMesa[35]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_trentacincoMouseClicked
 
     private void trentaseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentaseisMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 36,cantidadFicha);
-        apuestaMesa[36]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 36,cantidadFicha);
+        arregloMesa[36]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_trentaseisMouseClicked
 
     private void rojitoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rojitoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaColor, 0,cantidadFicha);
-        apuestaColor[0]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloColor, 0,cantidadFicha);
+        arregloColor[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_rojitoMouseClicked
 
     private void negritoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_negritoMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaColor, 1,cantidadFicha);
-        apuestaColor[1]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloColor, 1,cantidadFicha);
+        arregloColor[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_negritoMouseClicked
 
     private void pairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pairMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaParImpar, 0,cantidadFicha);
-        apuestaParImpar[0]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloParImpar, 0,cantidadFicha);
+        arregloParImpar[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_pairMouseClicked
 
     private void impairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_impairMouseClicked
-        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaParImpar, 1,cantidadFicha);
-        apuestaParImpar[1]=banco[0];
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloParImpar, 1,cantidadFicha);
+        arregloParImpar[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_impairMouseClicked
+
+    private void prim_dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prim_dieciochoMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMitad, 0,cantidadFicha);
+        arregloMitad[0]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_prim_dieciochoMouseClicked
+
+    private void seg_dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seg_dieciochoMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMitad, 1,cantidadFicha);
+        arregloMitad[1]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_seg_dieciochoMouseClicked
+
+    private void pri_docenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pri_docenaMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDocena, 0,cantidadFicha);
+        arregloDocena[0]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_pri_docenaMouseClicked
+
+    private void dos_docenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dos_docenaMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDocena, 1,cantidadFicha);
+        arregloDocena[1]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_dos_docenaMouseClicked
+
+    private void tres_docenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tres_docenaMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloDocena, 2,cantidadFicha);
+        arregloDocena[2]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_tres_docenaMouseClicked
+
+    private void prim_filaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prim_filaMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloColumna, 0,cantidadFicha);
+        arregloColumna[0]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_prim_filaMouseClicked
+
+    private void seg_filaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seg_filaMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloColumna, 1,cantidadFicha);
+        arregloColumna[1]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_seg_filaMouseClicked
+
+    private void ter_filaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ter_filaMouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloColumna, 2,cantidadFicha);
+        arregloColumna[2]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_ter_filaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1292,6 +1413,7 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelGanancia;
     private javax.swing.JLabel jLabelMonto;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel negrito;
