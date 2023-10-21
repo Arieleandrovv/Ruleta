@@ -12,7 +12,8 @@ public class ReglasRuleta {
     
     
     
-    public void apuestaIndividual(){
+    public int apuestaIndividual(int monto){
+        return monto*36;
     }
     public void apuestaColor(){
     }

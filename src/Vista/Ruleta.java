@@ -4,13 +4,17 @@
  */
 package Vista;
 
+import Controlador.ControladorRuleta;
 import Modelo.Rueda;
 import Modelo.CasillaNegra;
 import Modelo.CasillaRoja;
 import Modelo.CasillaVerde;
 import Modelo.FichaDiez;
 import Modelo.Ficha;
+import Modelo.FichaCien;
+import Modelo.FichaCincuenta;
 import Modelo.FichaVeinte;
+import Modelo.ReglasRuleta;
 
 /**
  *
@@ -27,9 +31,16 @@ public class Ruleta extends javax.swing.JFrame {
     CasillaVerde cave;
     FichaDiez fdiez;
     FichaVeinte fveinte;
+    FichaCincuenta fcincuenta;
+    FichaCien fcien;
+    int[] apuestaMesa;
+    ReglasRuleta apuesta;
     Rueda ruedaGirando;
+    ControladorRuleta controladorJuego;
     boolean flagFicha10;
     boolean flagFicha20;
+    boolean flagFicha50;
+    boolean flagFicha100;
     int montoMesa;
     public Ruleta() {
         initComponents();
@@ -39,8 +50,15 @@ public class Ruleta extends javax.swing.JFrame {
         cave= new CasillaVerde();
         fdiez=new FichaDiez(10, "rojo");
         fveinte=new FichaVeinte(20, "magenta");
-        flagFicha10=false;
+        fcincuenta=new FichaCincuenta (50, "verde");
+        fcien=new FichaCien (100, "azul");
+        controladorJuego = new ControladorRuleta(fdiez,fveinte,fcincuenta,fcien);        
+        flagFicha10=true;
         flagFicha20=false;
+        flagFicha50=false;
+        flagFicha100=false;
+        apuestaMesa = new int[37];
+        apuesta=new ReglasRuleta();
         montoMesa=0;
     }
 
@@ -197,6 +215,12 @@ public class Ruleta extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
+        jButton50 = new javax.swing.JButton();
+        jButton100 = new javax.swing.JButton();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CASINO UMSS");
@@ -224,9 +248,20 @@ public class Ruleta extends javax.swing.JFrame {
         ruletita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ruletita3.png"))); // NOI18N
         jPanel1.add(ruletita, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 310, 300));
         jPanel1.add(cero, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 30, 30));
+
+        uno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                unoMouseClicked(evt);
+            }
+        });
         jPanel1.add(uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, 20, 30));
 
         dos.setText("jLabel4");
+        dos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dosMouseClicked(evt);
+            }
+        });
         jPanel1.add(dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 20, 20));
 
         tres.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -479,7 +514,7 @@ public class Ruleta extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 50, -1, -1));
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, -1, -1));
 
         jButton20.setText("20");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
@@ -487,7 +522,35 @@ public class Ruleta extends javax.swing.JFrame {
                 jButton20ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, -1));
+        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, -1, -1));
+
+        jButton50.setText("50");
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 50, -1, -1));
+
+        jButton100.setText("100");
+        jButton100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton100ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton100, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, -1, -1));
+
+        jLabel29.setText("jLabel29");
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 190, -1, -1));
+
+        jLabel30.setText("jLabel30");
+        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 220, -1, -1));
+
+        jLabel31.setText("jLabel31");
+        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 250, -1, -1));
+
+        jLabel32.setText("jLabel32");
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 280, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -507,6 +570,7 @@ public class Ruleta extends javax.swing.JFrame {
 
     private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
         int numero=ruedaGirando.aleatorio();
+        
         if(cane.isCasillero(numero)){
             jLabel2.setText(cane.getColor());
         }else if(caro.isCasillero(numero)){
@@ -514,27 +578,53 @@ public class Ruleta extends javax.swing.JFrame {
         }else if (cave.isCasillero(numero)){
             jLabel2.setText(cave.getColor());
         }
-        //String Color=jLabel1.setText(numero+"");
+        jLabel1.setText(numero+"");
+        int a=apuesta.apuestaIndividual(apuestaMesa[numero]);
+        jLabel30.setText(a+"");
     }//GEN-LAST:event_EmpezarActionPerformed
 
     private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked
-        if (flagFicha10){
-            jLabel28.setText((montoMesa=fdiez.sumarFichaDiez(montoMesa))+"");
-        }else if (flagFicha20){
-            jLabel28.setText((montoMesa=fveinte.sumarFichaVeinte(montoMesa))+"");
-        }
+        apuestaMesa[3]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 3);
         
+        jLabel28.setText(apuestaMesa[3]+"");        
     }//GEN-LAST:event_tresMouseClicked
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         flagFicha10=true;
         flagFicha20=false;
+        flagFicha50=false;
+        flagFicha100=false;
+        
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         flagFicha10=false;
         flagFicha20=true;
+        flagFicha50=false;
+        flagFicha100=false;
     }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        flagFicha10=false;
+        flagFicha20=false;
+        flagFicha50=true;
+        flagFicha100=false;
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
+        flagFicha10=false;
+        flagFicha20=false;
+        flagFicha50=false;
+        flagFicha100=true;
+    }//GEN-LAST:event_jButton100ActionPerformed
+
+    private void unoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unoMouseClicked
+        apuestaMesa[1]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 1);
+    }//GEN-LAST:event_unoMouseClicked
+
+    private void dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dosMouseClicked
+        apuestaMesa[2]=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, apuestaMesa, 2);
+    }//GEN-LAST:event_dosMouseClicked
 
     /**
      * @param args the command line arguments
@@ -602,7 +692,9 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel fichita;
     private javax.swing.JLabel impair;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton50;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -624,7 +716,11 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;

@@ -8,6 +8,19 @@ package Modelo;
  *
  * @author PC
  */
-public class FichaCien {
-    
+public class FichaCien extends Ficha{
+
+    public FichaCien(int valor, String color) {
+        super(valor, color);
+    }
+    public int sumarFichaCien(int monto){
+        return monto+100;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("FichaDiez{"+100+","+"azul");
+        sb.append('}');
+        return sb.toString();
+    }
 }
