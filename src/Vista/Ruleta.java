@@ -8,6 +8,9 @@ import Modelo.Rueda;
 import Modelo.CasillaNegra;
 import Modelo.CasillaRoja;
 import Modelo.CasillaVerde;
+import Modelo.FichaDiez;
+import Modelo.Ficha;
+import Modelo.FichaVeinte;
 
 /**
  *
@@ -22,13 +25,23 @@ public class Ruleta extends javax.swing.JFrame {
     CasillaNegra cane;
     CasillaRoja caro;
     CasillaVerde cave;
-    Rueda ruedaGirando;    
+    FichaDiez fdiez;
+    FichaVeinte fveinte;
+    Rueda ruedaGirando;
+    boolean flagFicha10;
+    boolean flagFicha20;
+    int montoMesa;
     public Ruleta() {
         initComponents();
         ruedaGirando=new Rueda();
         cane= new CasillaNegra();
         caro= new CasillaRoja();
         cave= new CasillaVerde();
+        fdiez=new FichaDiez(10, "rojo");
+        fveinte=new FichaVeinte(20, "magenta");
+        flagFicha10=false;
+        flagFicha20=false;
+        montoMesa=0;
     }
 
     /**
@@ -181,6 +194,9 @@ public class Ruleta extends javax.swing.JFrame {
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
         Mesita = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CASINO UMSS");
@@ -212,6 +228,12 @@ public class Ruleta extends javax.swing.JFrame {
 
         dos.setText("jLabel4");
         jPanel1.add(dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 20, 20));
+
+        tres.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tresMouseClicked(evt);
+            }
+        });
         jPanel1.add(tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 20, 20));
         jPanel1.add(cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, 20, 30));
         jPanel1.add(cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 20, 30));
@@ -260,7 +282,7 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(ter_fila, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 320, 20, 40));
 
         fichita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fichitas.png"))); // NOI18N
-        jPanel1.add(fichita, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, 280));
+        jPanel1.add(fichita, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, 280));
         jPanel1.add(cero_tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 326, 20, 20));
         jPanel1.add(cero_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 376, 20, 20));
         jPanel1.add(cero_uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 20, 30));
@@ -448,6 +470,25 @@ public class Ruleta extends javax.swing.JFrame {
         Mesita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/mesa2.jpeg"))); // NOI18N
         jPanel1.add(Mesita, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 520, 260));
 
+        jLabel28.setText("jLabel28");
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 160, -1, -1));
+
+        jButton10.setText("10");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 50, -1, -1));
+
+        jButton20.setText("20");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -473,9 +514,27 @@ public class Ruleta extends javax.swing.JFrame {
         }else if (cave.isCasillero(numero)){
             jLabel2.setText(cave.getColor());
         }
-        //String Color=
-        jLabel1.setText(numero+"");
+        //String Color=jLabel1.setText(numero+"");
     }//GEN-LAST:event_EmpezarActionPerformed
+
+    private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked
+        if (flagFicha10){
+            jLabel28.setText((montoMesa=fdiez.sumarFichaDiez(montoMesa))+"");
+        }else if (flagFicha20){
+            jLabel28.setText((montoMesa=fveinte.sumarFichaVeinte(montoMesa))+"");
+        }
+        
+    }//GEN-LAST:event_tresMouseClicked
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        flagFicha10=true;
+        flagFicha20=false;
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        flagFicha10=false;
+        flagFicha20=true;
+    }//GEN-LAST:event_jButton20ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -542,6 +601,8 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel dos_docena;
     private javax.swing.JLabel fichita;
     private javax.swing.JLabel impair;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton20;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -562,6 +623,7 @@ public class Ruleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;

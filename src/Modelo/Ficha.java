@@ -12,6 +12,14 @@ public class Ficha {
     private int valor;
     private String color;
 
+    public Ficha(int valor, String color) {
+        this.valor = valor;
+        this.color = color;
+    }
+    public int sumarPila(int monto){
+        return valor+monto;
+    }
+
     public int getValor() {
         return valor;
     }
