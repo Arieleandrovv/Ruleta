@@ -41,6 +41,7 @@ public class Ruleta extends javax.swing.JFrame {
     int[] arregloColumna;
     int[] arregloTripleNumero;
     int[] arregloDobleNumero;
+    int[] arregloEsquina;
     ReglasRuleta apuesta;
     Rueda ruedaGirando;
     ControladorRuleta controladorJuego;
@@ -75,6 +76,7 @@ public class Ruleta extends javax.swing.JFrame {
         arregloColumna=new int[3];
         arregloTripleNumero=new int[2];
         arregloDobleNumero=new int[60];
+        arregloEsquina=new int[22];
         montoMesa=0;
         cantidadFicha=40;
         jLabelMonto.setText(cantidadFicha+"");
@@ -870,6 +872,11 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(treintauno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 422, 10, 30));
 
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
 
         jLabel023.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 153), 2));
@@ -1084,66 +1091,171 @@ public class Ruleta extends javax.swing.JFrame {
         jPanel1.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
 
         jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel42MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 406, 16, 10));
 
         jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel43MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 358, 14, 10));
 
         jLabel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel44MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 406, 14, 10));
 
         jLabel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel45MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 406, 14, 10));
 
         jLabel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel46MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 358, 13, 10));
 
         jLabel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel47MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 406, 15, 10));
 
         jLabel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel48MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 358, 15, 10));
 
         jLabel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel49MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 406, 14, 10));
 
         jLabel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel50MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 358, 14, 10));
 
         jLabel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel51MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 358, 13, 10));
 
         jLabel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel52.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel52MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 406, 13, 10));
 
         jLabel53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel53MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 358, 15, 10));
 
         jLabel54.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel54MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 406, 14, 10));
 
         jLabel55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel55MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 358, 11, 10));
 
         jLabel56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel56MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(508, 406, 13, 10));
 
         jLabel57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel57MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 358, 15, 10));
 
         jLabel58.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel58.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel58MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(611, 406, 14, 10));
 
         jLabel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel59MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 358, 14, 10));
 
         jLabel60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel60.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 406, 15, 10));
 
         jLabel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel61.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel61MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 358, 10, 10));
 
         jLabel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
+        jLabel62.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel62MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 406, 10, 10));
 
         Mesita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/mesa2.jpeg"))); // NOI18N
@@ -1220,16 +1332,17 @@ public class Ruleta extends javax.swing.JFrame {
 
     private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
         int numero=ruedaGirando.aleatorio();
-        int numIndividual=0;
-        int numColor=0;
-        int numParImpar=0;
-        int numBajoAlto=0;
-        int numDocena=0;
-        int numColumna=0;
-        int numTriple=0;
+        int numIndividual;
+        int numColor;
+        int numParImpar;
+        int numBajoAlto;
+        int numDocena;
+        int numColumna;
+        int numTriple;
         int numDoble;
+        int numEsquina;
         
-        numero=1;
+        numero=32;
         if(cane.isCasillero(numero)){            
             jLabel2.setText(cane.getColor());
         }else if(caro.isCasillero(numero)){
@@ -1256,11 +1369,12 @@ public class Ruleta extends javax.swing.JFrame {
         numTriple=controladorJuego.apuestaTriple(numero, arregloTripleNumero);
         //logica apuesta doble numero
         numDoble=controladorJuego.apuestaDoble(numero, arregloDobleNumero);
-        System.out.println(numColumna);
+        //logica esquina
+        numEsquina=controladorJuego.apuestaEsquina(numero, arregloEsquina);
         //resultado
-        cantidadFicha=cantidadFicha+numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+numTriple+numDoble;
+        cantidadFicha=cantidadFicha+numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+numTriple+numDoble+numEsquina;
         
-        jLabelGanancia.setText(numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+numTriple+numDoble+"");
+        jLabelGanancia.setText(numIndividual+numColor+numParImpar+numBajoAlto+numDocena+numColumna+numTriple+numDoble+numEsquina+"");
         jLabelMonto.setText(cantidadFicha+"");
         //reiniciando
         arregloMesa = new int[37];
@@ -1271,6 +1385,7 @@ public class Ruleta extends javax.swing.JFrame {
         arregloColumna=new int[3];
         arregloTripleNumero = new int[2];
         arregloDobleNumero=new int[60];
+        arregloEsquina=new int[22];
     }//GEN-LAST:event_EmpezarActionPerformed
 
     private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked
@@ -2079,6 +2194,160 @@ public class Ruleta extends javax.swing.JFrame {
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
     }//GEN-LAST:event_cero_unoMouseClicked
+
+    private void jLabel61MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel61MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 0,cantidadFicha);
+        arregloEsquina[0]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel61MouseClicked
+
+    private void jLabel62MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel62MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 1,cantidadFicha);
+        arregloEsquina[1]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel62MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 2,cantidadFicha);
+        arregloEsquina[2]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 3,cantidadFicha);
+        arregloEsquina[3]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel42MouseClicked
+
+    private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 4,cantidadFicha);
+        arregloEsquina[4]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel55MouseClicked
+
+    private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 5,cantidadFicha);
+        arregloEsquina[5]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel56MouseClicked
+
+    private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 6,cantidadFicha);
+        arregloEsquina[6]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel53MouseClicked
+
+    private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 7,cantidadFicha);
+        arregloEsquina[7]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel54MouseClicked
+
+    private void jLabel59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel59MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 8,cantidadFicha);
+        arregloEsquina[8]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel59MouseClicked
+
+    private void jLabel60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 9,cantidadFicha);
+        arregloEsquina[9]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel60MouseClicked
+
+    private void jLabel57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel57MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 10,cantidadFicha);
+        arregloEsquina[10]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel57MouseClicked
+
+    private void jLabel58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel58MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 11,cantidadFicha);
+        arregloEsquina[11]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel58MouseClicked
+
+    private void jLabel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel51MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 12,cantidadFicha);
+        arregloEsquina[12]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel51MouseClicked
+
+    private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 13,cantidadFicha);
+        arregloEsquina[13]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel52MouseClicked
+
+    private void jLabel50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 14,cantidadFicha);
+        arregloEsquina[14]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel50MouseClicked
+
+    private void jLabel49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 15,cantidadFicha);
+        arregloEsquina[15]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel49MouseClicked
+
+    private void jLabel48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel48MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 16,cantidadFicha);
+        arregloEsquina[16]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel48MouseClicked
+
+    private void jLabel47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 17,cantidadFicha);
+        arregloEsquina[17]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel47MouseClicked
+
+    private void jLabel46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 18,cantidadFicha);
+        arregloEsquina[18]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel46MouseClicked
+
+    private void jLabel45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel45MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 19,cantidadFicha);
+        arregloEsquina[19]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel45MouseClicked
+
+    private void jLabel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 20,cantidadFicha);
+        arregloEsquina[20]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel43MouseClicked
+
+    private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
+        banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloEsquina, 21,cantidadFicha);
+        arregloEsquina[21]=banco[0];
+        cantidadFicha=banco[1];
+        jLabelMonto.setText(cantidadFicha+"");
+    }//GEN-LAST:event_jLabel44MouseClicked
 
     /**
      * @param args the command line arguments

@@ -315,6 +315,77 @@ public class ControladorRuleta {
         return valor;
     }
     
+    public int apuestaEsquina(int numero, int [] arreglo){
+        int valor=0;
+        if (numero==2 || numero==3 || numero==6 || numero==5){
+            valor=apuesta.apuestaEsquina(arreglo[0]);
+        }
+        if(numero==1 || numero==2 || numero==5 || numero==4){
+            valor=valor+apuesta.apuestaEsquina(arreglo[1]);
+        }
+        if(numero==5 || numero==6 || numero==9 || numero==8){
+            valor=valor+apuesta.apuestaEsquina(arreglo[2]);
+        }
+        if(numero==4 || numero==5 || numero==7 || numero==8){
+            valor=valor+apuesta.apuestaEsquina(arreglo[3]);
+        }
+        if(numero==8 || numero==9 || numero==11 || numero==12){
+            valor=valor+apuesta.apuestaEsquina(arreglo[4]);
+        }
+        if(numero==7 || numero==8 || numero==10 || numero==11){
+            valor=valor+apuesta.apuestaEsquina(arreglo[5]);
+        }
+        if(numero==11 || numero==12 || numero==14 || numero==15){
+            valor=valor+apuesta.apuestaEsquina(arreglo[6]);
+        }
+        if(numero==10 || numero==11 || numero==13 || numero==14){
+            valor=valor+apuesta.apuestaEsquina(arreglo[7]);
+        }
+        if(numero==14 || numero==15 || numero==17 || numero==18){
+            valor=valor+apuesta.apuestaEsquina(arreglo[8]);
+        }
+        if(numero==13 || numero==14 || numero==16 || numero==17){
+            valor=valor+apuesta.apuestaEsquina(arreglo[9]);
+        }
+        if(numero==17 || numero==18 || numero==20 || numero==21){
+            valor=valor+apuesta.apuestaEsquina(arreglo[10]);
+        }
+        if(numero==16 || numero==17 || numero==19 || numero==20){
+            valor=valor+apuesta.apuestaEsquina(arreglo[11]);
+        }
+        if(numero==20 || numero==21 || numero==23 || numero==24){
+            valor=valor+apuesta.apuestaEsquina(arreglo[12]);
+        }
+        if(numero==19 || numero==20 || numero==22 || numero==23){
+            valor=valor+apuesta.apuestaEsquina(arreglo[13]);
+        }
+        if(numero==23 || numero==24 || numero==26 || numero==27){
+            valor=valor+apuesta.apuestaEsquina(arreglo[14]);
+        }
+        if(numero==22 || numero==23 || numero==25 || numero==26){
+            valor=valor+apuesta.apuestaEsquina(arreglo[15]);
+        }
+        if(numero==26 || numero==27 || numero==29 || numero==30){
+            valor=valor+apuesta.apuestaEsquina(arreglo[16]);
+        }
+        if(numero==25 || numero==26 || numero==28 || numero==29){
+            valor=valor+apuesta.apuestaEsquina(arreglo[17]);
+        }
+        if(numero==29 || numero==30 || numero==32 || numero==33){
+            valor=valor+apuesta.apuestaEsquina(arreglo[18]);
+        }
+        if(numero==28 || numero==29 || numero==31 || numero==32){
+            valor=valor+apuesta.apuestaEsquina(arreglo[19]);
+        }
+        if(numero==32 || numero==33 || numero==35 || numero==36){
+            valor=valor+apuesta.apuestaEsquina(arreglo[20]);
+        }
+        if(numero==31 || numero==32 || numero==34 || numero==35){
+            valor=valor+apuesta.apuestaEsquina(arreglo[21]);
+        }
+        return valor;
+    }
+    
     private boolean isInColumna(int numero, int [] columna){
         for(int x=0; x<columna.length;x++){
             if (numero==columna[x]){

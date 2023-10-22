@@ -36,7 +36,8 @@ public class ReglasRuleta {
     public int apuestaDoble(int monto){
         return monto*17;
     }
-    public void apuestaEsquina(){
+    public int apuestaEsquina(int monto){
+        return monto*9;
     }
     
     
