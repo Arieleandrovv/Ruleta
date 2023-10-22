@@ -29,6 +29,7 @@ public class Ruleta extends javax.swing.JFrame {
     CasillaNegra cane;
     CasillaRoja caro;
     CasillaVerde cave;
+    Ficha fichaNueva;
     FichaDiez fdiez;
     FichaVeinte fveinte;
     FichaCincuenta fcincuenta;
@@ -55,14 +56,15 @@ public class Ruleta extends javax.swing.JFrame {
     public Ruleta() {
         initComponents();
         ruedaGirando=new Rueda();
+        fichaNueva= new Ficha();
         cane= new CasillaNegra();
         caro= new CasillaRoja();
         cave= new CasillaVerde();
         fdiez=new FichaDiez(10, "rojo");
-        fveinte=new FichaVeinte(20, "magenta");
-        fcincuenta=new FichaCincuenta (50, "verde");
+        fveinte=new FichaVeinte(20, "magenta");        
+        fcincuenta=new FichaCincuenta (55, "verde");
         fcien=new FichaCien (100, "azul");
-        controladorJuego = new ControladorRuleta(fdiez,fveinte,fcincuenta,fcien);        
+        controladorJuego = new ControladorRuleta(fdiez,fveinte,fcincuenta,fcien,fichaNueva);        
         flagFicha10 = true;
         flagFicha20 = false;
         flagFicha50 = false;
@@ -78,7 +80,7 @@ public class Ruleta extends javax.swing.JFrame {
         arregloDobleNumero=new int[60];
         arregloEsquina=new int[22];
         montoMesa=0;
-        cantidadFicha=40;
+        cantidadFicha=60;
         jLabelMonto.setText(cantidadFicha+"");
         banco=new int[2];
     }

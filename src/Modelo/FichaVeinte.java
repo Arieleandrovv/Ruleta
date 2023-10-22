@@ -25,7 +25,7 @@ public class FichaVeinte extends Ficha {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("FichaDiez{"+20+","+"magenta");
+        sb.append("FichaVeinte{"+super.getValor()+","+super.getColor());
         sb.append('}');
         return sb.toString();
     }

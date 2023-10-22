@@ -7,6 +7,7 @@ package Controlador;
 import Modelo.CasillaNegra;
 import Modelo.CasillaRoja;
 import Modelo.CasillaVerde;
+import Modelo.Ficha;
 import Modelo.FichaCien;
 import Modelo.FichaCincuenta;
 import Modelo.FichaDiez;
@@ -22,6 +23,8 @@ public class ControladorRuleta {
     FichaVeinte fveinte;
     FichaCincuenta fcincuenta;
     FichaCien fcien;
+    Ficha f;
+    Ficha x;
     ReglasRuleta apuesta;
     CasillaNegra cane;
     CasillaRoja caro;
@@ -30,11 +33,13 @@ public class ControladorRuleta {
     private int [] segundaColumna={2,5,8,11,14,17,20,23,26,29,32,35};
     private int [] terceraColumna={3,6,9,12,15,18,21,24,27,30,33,36};
    
-    public ControladorRuleta(FichaDiez fdiez, FichaVeinte fveinte, FichaCincuenta fcincuenta, FichaCien fcien) {
+    public ControladorRuleta(FichaDiez fdiez, FichaVeinte fveinte, FichaCincuenta fcincuenta, FichaCien fcien, Ficha f) {
         this.fdiez = fdiez;
         this.fveinte = fveinte;
         this.fcincuenta = fcincuenta;
         this.fcien = fcien;
+        this.f=(Ficha) fveinte;
+        x=new FichaDiez(125,"rojo");
         apuesta=new ReglasRuleta();
         cane= new CasillaNegra();
         caro= new CasillaRoja();
@@ -46,12 +51,12 @@ public class ControladorRuleta {
         int monto=0;
         if (a){
             if(montoInicial>=10){
-                monto=fdiez.sumarFichaDiez(numero[index]);
+                monto=x.sumarPila(numero[index]);
                 montoInicial=fdiez.restarFichaDiez(montoInicial);
             }
         }else if (b){
             if(montoInicial>=20){
-                monto=fveinte.sumarFichaVeinte(numero[index]);
+                monto=f.sumarPila(numero[index]);
                 montoInicial=fveinte.restarFichaVeinte(montoInicial);
             }
         }else if (c){

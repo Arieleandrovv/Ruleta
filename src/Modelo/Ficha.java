@@ -9,8 +9,12 @@ package Modelo;
  * Marcia Lafuente v1
  */
 public class Ficha {
-    private int valor;
-    private String color;
+    protected int valor;
+    protected String color;
+    
+    public Ficha(){
+    
+    }
 
     public Ficha(int valor, String color) {
         this.valor = valor;
@@ -26,6 +30,11 @@ public class Ficha {
 
     public String getColor() {
         return color;
+    }
+
+    @Override
+    public String toString() {
+        return "Ficha{" + "valor=" + valor + ", color=" + color + '}';
     }
     
     

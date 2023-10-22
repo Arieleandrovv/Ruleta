@@ -22,7 +22,7 @@ public class FichaCien extends Ficha{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("FichaDiez{"+100+","+"azul");
+        sb.append("FichaDiez{"+super.getValor()+","+super.getColor());
         sb.append('}');
         return sb.toString();
     }
