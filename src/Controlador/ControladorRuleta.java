@@ -162,6 +162,156 @@ public class ControladorRuleta {
         if(numero==6 || numero==9){
             valor=valor+apuesta.apuestaDoble(arreglo[9]);
         }
+        if(numero==7 || numero==8){
+            valor=valor+apuesta.apuestaDoble(arreglo[10]);
+        }
+        if(numero==8 || numero==9){
+            valor=valor+apuesta.apuestaDoble(arreglo[11]);
+        }
+        if(numero==7 || numero==10){
+            valor=valor+apuesta.apuestaDoble(arreglo[12]);
+        }
+        if(numero==8 || numero==11){
+            valor=valor+apuesta.apuestaDoble(arreglo[13]);
+        }
+        if(numero==9 || numero==12){
+            valor=valor+apuesta.apuestaDoble(arreglo[14]);
+        }
+        if(numero==10 || numero==11){
+            valor=valor+apuesta.apuestaDoble(arreglo[15]);
+        }
+        if(numero==11 || numero==12){
+            valor=valor+apuesta.apuestaDoble(arreglo[16]);
+        }
+        if(numero==10 || numero==13){
+            valor=valor+apuesta.apuestaDoble(arreglo[17]);
+        }
+        if(numero==11 || numero==14){
+            valor=valor+apuesta.apuestaDoble(arreglo[18]);
+        }
+        if(numero==12 || numero==15){
+            valor=valor+apuesta.apuestaDoble(arreglo[19]);
+        }
+        if(numero==13 || numero==14){
+            valor=valor+apuesta.apuestaDoble(arreglo[20]);
+        }
+        if(numero==14 || numero==15){
+            valor=valor+apuesta.apuestaDoble(arreglo[21]);
+        }
+        if(numero==13 || numero==16){
+            valor=valor+apuesta.apuestaDoble(arreglo[22]);
+        }
+        if(numero==14 || numero==17){
+            valor=valor+apuesta.apuestaDoble(arreglo[23]);
+        }
+        if(numero==15 || numero==18){
+            valor=valor+apuesta.apuestaDoble(arreglo[24]);
+        }
+        if(numero==16 || numero==17){
+            valor=valor+apuesta.apuestaDoble(arreglo[25]);
+        }
+        if(numero==17 || numero==18){
+            valor=valor+apuesta.apuestaDoble(arreglo[26]);
+        }
+        if(numero==16 || numero==19){
+            valor=valor+apuesta.apuestaDoble(arreglo[27]);
+        }
+        if(numero==17 || numero==20){
+            valor=valor+apuesta.apuestaDoble(arreglo[28]);
+        }
+        if(numero==18 || numero==21){
+            valor=valor+apuesta.apuestaDoble(arreglo[29]);
+        }
+        if(numero==19 || numero==20){
+            valor=valor+apuesta.apuestaDoble(arreglo[30]);
+        }
+        if(numero==20 || numero==21){
+            valor=valor+apuesta.apuestaDoble(arreglo[31]);
+        }
+        if(numero==19 || numero==22){
+            valor=valor+apuesta.apuestaDoble(arreglo[32]);
+        }
+        if(numero==20 || numero==23){
+            valor=valor+apuesta.apuestaDoble(arreglo[33]);
+        }
+        if(numero==21 || numero==24){
+            valor=valor+apuesta.apuestaDoble(arreglo[34]);
+        }
+        if(numero==22 || numero==23){
+            valor=valor+apuesta.apuestaDoble(arreglo[35]);
+        }
+        if(numero==23 || numero==24){
+            valor=valor+apuesta.apuestaDoble(arreglo[36]);
+        }
+        if(numero==22 || numero==25){
+            valor=valor+apuesta.apuestaDoble(arreglo[37]);
+        }
+        if(numero==23 || numero==26){
+            valor=valor+apuesta.apuestaDoble(arreglo[38]);
+        }
+        if(numero==24 || numero==27){
+            valor=valor+apuesta.apuestaDoble(arreglo[39]);
+        }
+        if(numero==25 || numero==26){
+            valor=valor+apuesta.apuestaDoble(arreglo[40]);
+        }
+        if(numero==26 || numero==27){
+            valor=valor+apuesta.apuestaDoble(arreglo[41]);
+        }
+        if(numero==25 || numero==28){
+            valor=valor+apuesta.apuestaDoble(arreglo[42]);
+        }
+        if(numero==26 || numero==29){
+            valor=valor+apuesta.apuestaDoble(arreglo[43]);
+        }
+        if(numero==27 || numero==30){
+            valor=valor+apuesta.apuestaDoble(arreglo[44]);
+        }
+        if(numero==28 || numero==29){
+            valor=valor+apuesta.apuestaDoble(arreglo[45]);
+        }
+        if(numero==29 || numero==30){
+            valor=valor+apuesta.apuestaDoble(arreglo[46]);
+        }
+        if(numero==28 || numero==31){
+            valor=valor+apuesta.apuestaDoble(arreglo[47]);
+        }
+        if(numero==29 || numero==32){
+            valor=valor+apuesta.apuestaDoble(arreglo[48]);
+        }
+        if(numero==30 || numero==33){
+            valor=valor+apuesta.apuestaDoble(arreglo[49]);
+        }
+        if(numero==31 || numero==32){
+            valor=valor+apuesta.apuestaDoble(arreglo[50]);
+        }
+        if(numero==32 || numero==33){
+            valor=valor+apuesta.apuestaDoble(arreglo[51]);
+        }
+        if(numero==31 || numero==34){
+            valor=valor+apuesta.apuestaDoble(arreglo[52]);
+        }
+        if(numero==32 || numero==35){
+            valor=valor+apuesta.apuestaDoble(arreglo[53]);
+        }
+        if(numero==33 || numero==36){
+            valor=valor+apuesta.apuestaDoble(arreglo[54]);
+        }
+        if(numero==34 || numero==35){
+            valor=valor+apuesta.apuestaDoble(arreglo[55]);
+        }
+        if(numero==35 || numero==36){
+            valor=valor+apuesta.apuestaDoble(arreglo[56]);
+        }
+        if(numero==0 || numero==3){
+            valor=valor+apuesta.apuestaDoble(arreglo[57]);
+        }
+        if(numero==0 || numero==2){
+            valor=valor+apuesta.apuestaDoble(arreglo[58]);
+        }
+        if(numero==0 || numero==1){
+            valor=valor+apuesta.apuestaDoble(arreglo[59]);
+        }
         return valor;
     }
     
