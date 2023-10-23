@@ -233,7 +233,6 @@ public class InterfazRuleta extends javax.swing.JFrame {
         veintiocho_veintinueve = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
@@ -391,21 +390,21 @@ public class InterfazRuleta extends javax.swing.JFrame {
                 treceMouseClicked(evt);
             }
         });
-        jPanel1.add(trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 10, 30));
+        jPanel1.add(trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 20, 30));
 
         catorce.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 catorceMouseClicked(evt);
             }
         });
-        jPanel1.add(catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, 10, 30));
+        jPanel1.add(catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 370, 21, 30));
 
         quince.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 quinceMouseClicked(evt);
             }
         });
-        jPanel1.add(quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, 10, 20));
+        jPanel1.add(quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 330, 20, 20));
 
         dieciseis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -433,21 +432,21 @@ public class InterfazRuleta extends javax.swing.JFrame {
                 diecinueveMouseClicked(evt);
             }
         });
-        jPanel1.add(diecinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 420, 10, 30));
+        jPanel1.add(diecinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 420, 20, 30));
 
         veinte.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veinteMouseClicked(evt);
             }
         });
-        jPanel1.add(veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 370, 10, 30));
+        jPanel1.add(veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 370, 20, 30));
 
         veintiuno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veintiunoMouseClicked(evt);
             }
         });
-        jPanel1.add(veintiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 10, 30));
+        jPanel1.add(veintiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 320, 20, 30));
 
         ventidos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -475,21 +474,21 @@ public class InterfazRuleta extends javax.swing.JFrame {
                 venticincoMouseClicked(evt);
             }
         });
-        jPanel1.add(venticinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 420, 10, 30));
+        jPanel1.add(venticinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(695, 420, 20, 30));
 
         ventiseis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventiseisMouseClicked(evt);
             }
         });
-        jPanel1.add(ventiseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 370, 10, 30));
+        jPanel1.add(ventiseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(695, 370, 20, 30));
 
         ventisiete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventisieteMouseClicked(evt);
             }
         });
-        jPanel1.add(ventisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, 10, 30));
+        jPanel1.add(ventisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(695, 320, 20, 30));
 
         ventiocho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -664,618 +663,567 @@ public class InterfazRuleta extends javax.swing.JFrame {
                 jLabel3_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel3_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 10, 20));
+        jPanel1.add(jLabel3_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 330, 20, 20));
 
         jLabel2_5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel2_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 10, 20));
+        jPanel1.add(jLabel2_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 380, 20, 20));
 
         jLabel1_4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 10, 20));
+        jPanel1.add(jLabel1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 430, 20, 20));
 
         seis_nueve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 seis_nueveMouseClicked(evt);
             }
         });
-        jPanel1.add(seis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 320, 10, 30));
+        jPanel1.add(seis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 323, 20, 20));
 
         cinco_ocho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cinco_ochoMouseClicked(evt);
             }
         });
-        jPanel1.add(cinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 370, 10, 28));
+        jPanel1.add(cinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 377, 20, 20));
 
         cuatro_siete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cuatro_sieteMouseClicked(evt);
             }
         });
-        jPanel1.add(cuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 420, 10, 30));
+        jPanel1.add(cuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 426, 20, 20));
 
         nueve_doce.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 nueve_doceMouseClicked(evt);
             }
         });
-        jPanel1.add(nueve_doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 10, 30));
+        jPanel1.add(nueve_doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 326, 20, 20));
 
         ocho_once.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ocho_onceMouseClicked(evt);
             }
         });
-        jPanel1.add(ocho_once, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 369, 9, 35));
+        jPanel1.add(ocho_once, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 376, 20, 20));
 
         siete_diez.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 siete_diezMouseClicked(evt);
             }
         });
-        jPanel1.add(siete_diez, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 420, 10, 30));
+        jPanel1.add(siete_diez, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 426, 20, 20));
 
         doce_quince.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 doce_quinceMouseClicked(evt);
             }
         });
-        jPanel1.add(doce_quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 319, 10, 30));
+        jPanel1.add(doce_quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(538, 326, 20, 20));
 
         once_catorce.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 once_catorceMouseClicked(evt);
             }
         });
-        jPanel1.add(once_catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 372, 10, 30));
+        jPanel1.add(once_catorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(538, 376, 20, 20));
 
         diez_trece.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 diez_treceMouseClicked(evt);
             }
         });
-        jPanel1.add(diez_trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 421, 10, 30));
+        jPanel1.add(diez_trece, new org.netbeans.lib.awtextra.AbsoluteConstraints(538, 427, 20, 20));
 
         quince_dieciocho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 quince_dieciochoMouseClicked(evt);
             }
         });
-        jPanel1.add(quince_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 321, 10, 30));
+        jPanel1.add(quince_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(572, 327, 20, 20));
 
         catorce_diecisiete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 catorce_diecisieteMouseClicked(evt);
             }
         });
-        jPanel1.add(catorce_diecisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 372, 9, 29));
+        jPanel1.add(catorce_diecisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(572, 376, 20, 20));
 
         trece_dieciseis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 trece_dieciseisMouseClicked(evt);
             }
         });
-        jPanel1.add(trece_dieciseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 422, 10, 30));
+        jPanel1.add(trece_dieciseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(572, 426, 20, 20));
 
         dieciocho_ventiuno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 dieciocho_ventiunoMouseClicked(evt);
             }
         });
-        jPanel1.add(dieciocho_ventiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 324, 10, 30));
+        jPanel1.add(dieciocho_ventiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 326, 20, 20));
 
         diecisiete_veinte.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 diecisiete_veinteMouseClicked(evt);
             }
         });
-        jPanel1.add(diecisiete_veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 374, 10, 28));
+        jPanel1.add(diecisiete_veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 377, 20, 20));
 
         deiciseis_diecinueve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 deiciseis_diecinueveMouseClicked(evt);
             }
         });
-        jPanel1.add(deiciseis_diecinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 424, 10, 30));
+        jPanel1.add(deiciseis_diecinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(608, 427, 20, 20));
 
         ventiuno_cuatro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventiuno_cuatroMouseClicked(evt);
             }
         });
-        jPanel1.add(ventiuno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 325, 10, 30));
+        jPanel1.add(ventiuno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 328, 20, 20));
 
         veinte_tres.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veinte_tresMouseClicked(evt);
             }
         });
-        jPanel1.add(veinte_tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 373, 10, 30));
+        jPanel1.add(veinte_tres, new org.netbeans.lib.awtextra.AbsoluteConstraints(642, 377, 20, 20));
 
         diecinueve_dos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 diecinueve_dosMouseClicked(evt);
             }
         });
-        jPanel1.add(diecinueve_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 426, 10, 30));
+        jPanel1.add(diecinueve_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(642, 429, 20, 20));
 
         venticuatro_siete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 venticuatro_sieteMouseClicked(evt);
             }
         });
-        jPanel1.add(venticuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 325, 10, 30));
+        jPanel1.add(venticuatro_siete, new org.netbeans.lib.awtextra.AbsoluteConstraints(675, 325, 20, 20));
 
         ventitres_seis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventitres_seisMouseClicked(evt);
             }
         });
-        jPanel1.add(ventitres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 372, 10, 30));
+        jPanel1.add(ventitres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(676, 377, 20, 20));
 
         ventidos_cinco.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventidos_cincoMouseClicked(evt);
             }
         });
-        jPanel1.add(ventidos_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 422, 10, 30));
+        jPanel1.add(ventidos_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(677, 428, 20, 20));
 
         ventisiete_treinta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventisiete_treintaMouseClicked(evt);
             }
         });
-        jPanel1.add(ventisiete_treinta, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 324, 10, 30));
+        jPanel1.add(ventisiete_treinta, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 328, 20, 20));
 
         ventiseis_nueve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventiseis_nueveMouseClicked(evt);
             }
         });
-        jPanel1.add(ventiseis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 373, 10, 30));
+        jPanel1.add(ventiseis_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 377, 20, 20));
 
         venticinco_ocho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 venticinco_ochoMouseClicked(evt);
             }
         });
-        jPanel1.add(venticinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(716, 420, 10, 30));
+        jPanel1.add(venticinco_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 425, 20, 20));
 
         treinta_tress.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 treinta_tressMouseClicked(evt);
             }
         });
-        jPanel1.add(treinta_tress, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 323, 10, 30));
+        jPanel1.add(treinta_tress, new org.netbeans.lib.awtextra.AbsoluteConstraints(745, 327, 20, 20));
 
         ventinueve_dos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventinueve_dosMouseClicked(evt);
             }
         });
-        jPanel1.add(ventinueve_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 374, 10, 30));
+        jPanel1.add(ventinueve_dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(745, 377, 20, 20));
 
         ventiocho_uno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ventiocho_unoMouseClicked(evt);
             }
         });
-        jPanel1.add(ventiocho_uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 422, 10, 30));
+        jPanel1.add(ventiocho_uno, new org.netbeans.lib.awtextra.AbsoluteConstraints(745, 427, 20, 20));
 
         treintatres_seis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 treintatres_seisMouseClicked(evt);
             }
         });
-        jPanel1.add(treintatres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(786, 320, 10, 30));
+        jPanel1.add(treintatres_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 327, 20, 20));
 
         treintados_cinco.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 treintados_cincoMouseClicked(evt);
             }
         });
-        jPanel1.add(treintados_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 374, 10, 30));
+        jPanel1.add(treintados_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 377, 20, 20));
 
         treintauno_cuatro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 treintauno_cuatroMouseClicked(evt);
             }
         });
-        jPanel1.add(treintauno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 422, 10, 30));
+        jPanel1.add(treintauno_cuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(779, 428, 20, 20));
 
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 352, 20, 20));
 
-        jLabel023.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 153), 2));
         jLabel023.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel023MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel023, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 355, 11, 18));
+        jPanel1.add(jLabel023, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 352, 20, 20));
 
-        jLabel012.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
         jLabel012.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel012MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel012, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 402, 11, 18));
+        jPanel1.add(jLabel012, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 400, 20, 20));
 
-        jLabel2_3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 153), 2));
         jLabel2_3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 359, 20, 8));
+        jPanel1.add(jLabel2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(418, 354, 20, 20));
 
-        jLabel2_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel2_1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 407, 20, 8));
+        jPanel1.add(jLabel2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 401, 20, 20));
 
-        cuatro_cinco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         cuatro_cinco.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cuatro_cincoMouseClicked(evt);
             }
         });
-        jPanel1.add(cuatro_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 407, 20, 8));
+        jPanel1.add(cuatro_cinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(452, 401, 20, 20));
 
-        cinco_seis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         cinco_seis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cinco_seisMouseClicked(evt);
             }
         });
-        jPanel1.add(cinco_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 359, 20, 8));
+        jPanel1.add(cinco_seis, new org.netbeans.lib.awtextra.AbsoluteConstraints(452, 353, 20, 20));
 
-        ocho_nueve.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         ocho_nueve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ocho_nueveMouseClicked(evt);
             }
         });
-        jPanel1.add(ocho_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 359, 20, 8));
+        jPanel1.add(ocho_nueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(487, 353, 20, 20));
 
-        siete_ocho.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         siete_ocho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 siete_ochoMouseClicked(evt);
             }
         });
-        jPanel1.add(siete_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(488, 407, 20, 8));
+        jPanel1.add(siete_ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 401, 20, 20));
 
-        diez_once.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         diez_once.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 diez_onceMouseClicked(evt);
             }
         });
-        jPanel1.add(diez_once, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 407, 20, 8));
+        jPanel1.add(diez_once, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 401, 20, 20));
 
-        once_doce.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         once_doce.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 once_doceMouseClicked(evt);
             }
         });
-        jPanel1.add(once_doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(519, 359, 20, 8));
+        jPanel1.add(once_doce, new org.netbeans.lib.awtextra.AbsoluteConstraints(519, 354, 20, 20));
 
-        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel14MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 407, 20, 8));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 401, 20, 20));
 
-        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel15MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 359, 20, 8));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 353, 20, 20));
 
-        dieciseis_diecisiete.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         dieciseis_diecisiete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 dieciseis_diecisieteMouseClicked(evt);
             }
         });
-        jPanel1.add(dieciseis_diecisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 407, 20, 8));
+        jPanel1.add(dieciseis_diecisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 401, 20, 20));
 
-        diecisiete_dieciocho.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         diecisiete_dieciocho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 diecisiete_dieciochoMouseClicked(evt);
             }
         });
-        jPanel1.add(diecisiete_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 359, 20, 8));
+        jPanel1.add(diecisiete_dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 353, 20, 20));
 
-        diecinueve_veinte.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         diecinueve_veinte.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 diecinueve_veinteMouseClicked(evt);
             }
         });
-        jPanel1.add(diecinueve_veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 407, 20, 8));
+        jPanel1.add(diecinueve_veinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 401, 20, 20));
 
-        veinte_veintiuno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         veinte_veintiuno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veinte_veintiunoMouseClicked(evt);
             }
         });
-        jPanel1.add(veinte_veintiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 359, 20, 8));
+        jPanel1.add(veinte_veintiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 353, 20, 20));
 
-        veintedos_veintetres.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         veintedos_veintetres.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veintedos_veintetresMouseClicked(evt);
             }
         });
-        jPanel1.add(veintedos_veintetres, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 407, 20, 8));
+        jPanel1.add(veintedos_veintetres, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 401, 20, 20));
 
-        veintitres_veinticuatro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         veintitres_veinticuatro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veintitres_veinticuatroMouseClicked(evt);
             }
         });
-        jPanel1.add(veintitres_veinticuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 359, 20, 8));
+        jPanel1.add(veintitres_veinticuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 353, 20, 20));
 
-        veintiseis_veintisiete.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 204), 2));
         veintiseis_veintisiete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veintiseis_veintisieteMouseClicked(evt);
             }
         });
-        jPanel1.add(veintiseis_veintisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 359, 20, 8));
+        jPanel1.add(veintiseis_veintisiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 353, 20, 20));
 
-        veinticinco_veintiseis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         veinticinco_veintiseis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veinticinco_veintiseisMouseClicked(evt);
             }
         });
-        jPanel1.add(veinticinco_veintiseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 407, 20, 8));
+        jPanel1.add(veinticinco_veintiseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(694, 401, 20, 20));
 
-        veintinueve_treinta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         veintinueve_treinta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veintinueve_treintaMouseClicked(evt);
             }
         });
-        jPanel1.add(veintinueve_treinta, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 359, 20, 8));
+        jPanel1.add(veintinueve_treinta, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 353, 20, 20));
 
-        jLabel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel25MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 359, 20, 8));
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 353, 20, 20));
 
-        jLabel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel26MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 359, 20, 8));
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 353, 20, 20));
 
-        veintiocho_veintinueve.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         veintiocho_veintinueve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 veintiocho_veintinueveMouseClicked(evt);
             }
         });
-        jPanel1.add(veintiocho_veintinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 407, 20, 8));
+        jPanel1.add(veintiocho_veintinueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 401, 20, 20));
 
-        jLabel39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel39.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel39MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 407, 20, 8));
+        jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 401, 20, 20));
 
-        jLabel40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 255), 2));
         jLabel40.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel40MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 407, 20, 8));
+        jPanel1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 401, 20, 20));
 
-        jLabel41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
-        jPanel1.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 358, 18, 10));
-
-        jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel42.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel42MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 406, 16, 10));
+        jPanel1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 20, 20));
 
-        jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel43.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel43MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 358, 14, 10));
+        jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 353, 20, 20));
 
-        jLabel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel44.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel44MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 406, 14, 10));
+        jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 401, 20, 20));
 
-        jLabel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel45.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel45MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 406, 14, 10));
+        jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(745, 401, 20, 20));
 
-        jLabel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel46.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel46MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 358, 13, 10));
+        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(746, 354, 20, 20));
 
-        jLabel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel47.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel47MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 406, 15, 10));
+        jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 401, 20, 20));
 
-        jLabel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel48.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel48MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 358, 15, 10));
+        jPanel1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 353, 20, 20));
 
-        jLabel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel49MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 406, 14, 10));
+        jPanel1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(676, 401, 20, 20));
 
-        jLabel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel50.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel50MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 358, 14, 10));
+        jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(676, 353, 20, 20));
 
-        jLabel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel51.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel51MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 358, 13, 10));
+        jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(642, 353, 20, 20));
 
-        jLabel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel52.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel52MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 406, 13, 10));
+        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(642, 401, 20, 20));
 
-        jLabel53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel53.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel53MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 358, 15, 10));
+        jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(539, 353, 20, 20));
 
-        jLabel54.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel54.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel54MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 406, 14, 10));
+        jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(539, 401, 20, 20));
 
-        jLabel55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel55.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel55MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 358, 11, 10));
+        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 353, 20, 20));
 
-        jLabel56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel56.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel56MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(508, 406, 13, 10));
+        jPanel1.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 401, 20, 20));
 
-        jLabel57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel57.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel57MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 358, 15, 10));
+        jPanel1.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(608, 353, 20, 20));
 
-        jLabel58.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel58.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel58MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(611, 406, 14, 10));
+        jPanel1.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(608, 401, 20, 20));
 
-        jLabel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel59.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel59MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(575, 358, 14, 10));
+        jPanel1.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(573, 353, 20, 20));
 
-        jLabel60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel60.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel60MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 406, 15, 10));
+        jPanel1.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(573, 401, 20, 20));
 
-        jLabel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel61.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel61MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 358, 10, 10));
+        jPanel1.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 353, 20, 20));
 
-        jLabel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 204), 2));
         jLabel62.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel62MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 406, 10, 10));
+        jPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 401, 20, 20));
 
         Mesita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/mesa2.jpeg"))); // NOI18N
         jPanel1.add(Mesita, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 520, 260));
@@ -1324,9 +1272,11 @@ public class InterfazRuleta extends javax.swing.JFrame {
         });
         jPanel1.add(jButton100, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 80, -1, -1));
 
+        jLabelGanancia.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(102, 102, 0)));
         jLabelGanancia.setPreferredSize(new java.awt.Dimension(37, 16));
         jPanel1.add(jLabelGanancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
 
+        jLabelMonto.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(102, 102, 0)));
         jLabelMonto.setPreferredSize(new java.awt.Dimension(37, 16));
         jPanel1.add(jLabelMonto, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, -1, -1));
 
@@ -1437,7 +1387,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[3]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
-        controladorJuego.setImage("src\\imagens\\100.png", clickeados, tres);
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, tres);
     }//GEN-LAST:event_tresMouseClicked
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -1474,6 +1424,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, uno);
     }//GEN-LAST:event_unoMouseClicked
 
     private void dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dosMouseClicked
@@ -1481,6 +1432,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[2]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, dos);
     }//GEN-LAST:event_dosMouseClicked
 
     private void seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seisMouseClicked
@@ -1488,6 +1440,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[6]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, seis);
     }//GEN-LAST:event_seisMouseClicked
 
     private void cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cincoMouseClicked
@@ -1495,6 +1448,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[5]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cinco);
     }//GEN-LAST:event_cincoMouseClicked
 
     private void cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMouseClicked
@@ -1502,6 +1456,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[4]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cuatro);
     }//GEN-LAST:event_cuatroMouseClicked
 
     private void nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nueveMouseClicked
@@ -1509,6 +1464,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[9]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados,nueve);
     }//GEN-LAST:event_nueveMouseClicked
 
     private void ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ochoMouseClicked
@@ -1516,6 +1472,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[8]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ocho);
     }//GEN-LAST:event_ochoMouseClicked
 
     private void sieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sieteMouseClicked
@@ -1523,6 +1480,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[7]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, siete);
     }//GEN-LAST:event_sieteMouseClicked
 
     private void doceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doceMouseClicked
@@ -1530,6 +1488,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[12]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, doce);
     }//GEN-LAST:event_doceMouseClicked
 
     private void onceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_onceMouseClicked
@@ -1537,6 +1496,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[11]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, once);
     }//GEN-LAST:event_onceMouseClicked
 
     private void diezMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diezMouseClicked
@@ -1544,6 +1504,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[10]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diez);
     }//GEN-LAST:event_diezMouseClicked
 
     private void ceroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ceroMouseClicked
@@ -1551,6 +1512,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cero);
     }//GEN-LAST:event_ceroMouseClicked
 
     private void quinceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quinceMouseClicked
@@ -1558,6 +1520,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[15]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, quince);
     }//GEN-LAST:event_quinceMouseClicked
 
     private void catorceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_catorceMouseClicked
@@ -1565,6 +1528,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[14]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, catorce);
     }//GEN-LAST:event_catorceMouseClicked
 
     private void treceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treceMouseClicked
@@ -1572,6 +1536,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[13]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trece);
     }//GEN-LAST:event_treceMouseClicked
 
     private void dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciochoMouseClicked
@@ -1579,6 +1544,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[18]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, dieciocho);
     }//GEN-LAST:event_dieciochoMouseClicked
 
     private void diecisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecisieteMouseClicked
@@ -1586,6 +1552,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[17]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diecisiete);
     }//GEN-LAST:event_diecisieteMouseClicked
 
     private void dieciseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciseisMouseClicked
@@ -1593,6 +1560,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[16]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, dieciseis);
     }//GEN-LAST:event_dieciseisMouseClicked
 
     private void diecinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecinueveMouseClicked
@@ -1600,6 +1568,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[19]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diecinueve);
     }//GEN-LAST:event_diecinueveMouseClicked
 
     private void veinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinteMouseClicked
@@ -1607,6 +1576,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[20]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veinte);
     }//GEN-LAST:event_veinteMouseClicked
 
     private void veintiunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintiunoMouseClicked
@@ -1614,6 +1584,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[21]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veintiuno);
     }//GEN-LAST:event_veintiunoMouseClicked
 
     private void ventidosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventidosMouseClicked
@@ -1621,6 +1592,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[22]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventidos);
     }//GEN-LAST:event_ventidosMouseClicked
 
     private void ventitresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventitresMouseClicked
@@ -1628,6 +1600,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[23]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventitres);
     }//GEN-LAST:event_ventitresMouseClicked
 
     private void venticuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticuatroMouseClicked
@@ -1635,6 +1608,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[24]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, venticuatro);
     }//GEN-LAST:event_venticuatroMouseClicked
 
     private void venticincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticincoMouseClicked
@@ -1642,6 +1616,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[25]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, venticinco);
     }//GEN-LAST:event_venticincoMouseClicked
 
     private void ventiseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiseisMouseClicked
@@ -1649,6 +1624,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[26]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventiseis);
     }//GEN-LAST:event_ventiseisMouseClicked
 
     private void ventisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventisieteMouseClicked
@@ -1656,6 +1632,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[27]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventisiete);
     }//GEN-LAST:event_ventisieteMouseClicked
 
     private void ventiochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiochoMouseClicked
@@ -1663,6 +1640,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[28]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventiocho);
     }//GEN-LAST:event_ventiochoMouseClicked
 
     private void ventinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventinueveMouseClicked
@@ -1670,6 +1648,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[29]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventinueve);
     }//GEN-LAST:event_ventinueveMouseClicked
 
     private void treintaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treintaMouseClicked
@@ -1677,6 +1656,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[7]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, treinta);
     }//GEN-LAST:event_treintaMouseClicked
 
     private void trentaunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentaunoMouseClicked
@@ -1684,6 +1664,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[31]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trentauno);
     }//GEN-LAST:event_trentaunoMouseClicked
 
     private void trentadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentadosMouseClicked
@@ -1691,6 +1672,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[32]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trentados);
     }//GEN-LAST:event_trentadosMouseClicked
 
     private void trentatresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentatresMouseClicked
@@ -1698,6 +1680,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[33]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trentatres);
     }//GEN-LAST:event_trentatresMouseClicked
 
     private void trentacuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentacuatroMouseClicked
@@ -1705,6 +1688,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[34]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trentacuatro);
     }//GEN-LAST:event_trentacuatroMouseClicked
 
     private void trentacincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentacincoMouseClicked
@@ -1712,6 +1696,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[35]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trentacinco);
     }//GEN-LAST:event_trentacincoMouseClicked
 
     private void trentaseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trentaseisMouseClicked
@@ -1719,6 +1704,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMesa[36]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trentaseis);
     }//GEN-LAST:event_trentaseisMouseClicked
 
     private void rojitoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rojitoMouseClicked
@@ -1726,7 +1712,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloColor[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
-        controladorJuego.setImage("src\\imagens\\100.png", clickeados, rojito);
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, rojito);
         
     }//GEN-LAST:event_rojitoMouseClicked
 
@@ -1735,6 +1721,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloColor[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, negrito);
     }//GEN-LAST:event_negritoMouseClicked
 
     private void pairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pairMouseClicked
@@ -1742,6 +1729,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloParImpar[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, pair);
     }//GEN-LAST:event_pairMouseClicked
 
     private void impairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_impairMouseClicked
@@ -1749,6 +1737,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloParImpar[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, impair);
     }//GEN-LAST:event_impairMouseClicked
 
     private void prim_dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prim_dieciochoMouseClicked
@@ -1756,6 +1745,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMitad[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, prim_dieciocho);
     }//GEN-LAST:event_prim_dieciochoMouseClicked
 
     private void seg_dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seg_dieciochoMouseClicked
@@ -1763,6 +1753,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloMitad[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, seg_dieciocho);
     }//GEN-LAST:event_seg_dieciochoMouseClicked
 
     private void pri_docenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pri_docenaMouseClicked
@@ -1770,6 +1761,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDocena[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, pri_docena);
     }//GEN-LAST:event_pri_docenaMouseClicked
 
     private void dos_docenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dos_docenaMouseClicked
@@ -1777,6 +1769,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDocena[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, dos_docena);
     }//GEN-LAST:event_dos_docenaMouseClicked
 
     private void tres_docenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tres_docenaMouseClicked
@@ -1784,6 +1777,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDocena[2]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, tres_docena);
     }//GEN-LAST:event_tres_docenaMouseClicked
 
     private void prim_filaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_prim_filaMouseClicked
@@ -1791,6 +1785,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloColumna[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, prim_fila);
     }//GEN-LAST:event_prim_filaMouseClicked
 
     private void seg_filaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seg_filaMouseClicked
@@ -1798,6 +1793,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloColumna[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, seg_fila);
     }//GEN-LAST:event_seg_filaMouseClicked
 
     private void ter_filaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ter_filaMouseClicked
@@ -1805,6 +1801,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloColumna[2]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ter_fila);
     }//GEN-LAST:event_ter_filaMouseClicked
 
     private void jLabel023MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel023MouseClicked
@@ -1812,6 +1809,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloTripleNumero[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel023);
     }//GEN-LAST:event_jLabel023MouseClicked
 
     private void jLabel012MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel012MouseClicked
@@ -1819,6 +1817,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloTripleNumero[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel012);
     }//GEN-LAST:event_jLabel012MouseClicked
 
     private void jLabel2_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2_3MouseClicked
@@ -1826,6 +1825,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel2_3);
     }//GEN-LAST:event_jLabel2_3MouseClicked
 
     private void jLabel2_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2_1MouseClicked
@@ -1833,6 +1833,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel2_1);
     }//GEN-LAST:event_jLabel2_1MouseClicked
 
     private void jLabel3_6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3_6MouseClicked
@@ -1840,6 +1841,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[4]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel3_6);
     }//GEN-LAST:event_jLabel3_6MouseClicked
 
     private void jLabel2_5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2_5MouseClicked
@@ -1847,6 +1849,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[3]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel2_5);
     }//GEN-LAST:event_jLabel2_5MouseClicked
 
     private void jLabel1_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1_4MouseClicked
@@ -1854,6 +1857,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[2]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel1_4);
     }//GEN-LAST:event_jLabel1_4MouseClicked
 
     private void cuatro_cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatro_cincoMouseClicked
@@ -1861,6 +1865,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[5]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cuatro_cinco);
     }//GEN-LAST:event_cuatro_cincoMouseClicked
 
     private void cinco_seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cinco_seisMouseClicked
@@ -1868,6 +1873,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[6]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cinco_seis);
     }//GEN-LAST:event_cinco_seisMouseClicked
 
     private void cuatro_sieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatro_sieteMouseClicked
@@ -1875,6 +1881,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[7]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cuatro_siete);
     }//GEN-LAST:event_cuatro_sieteMouseClicked
 
     private void cinco_ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cinco_ochoMouseClicked
@@ -1882,6 +1889,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[8]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cinco_ocho);
     }//GEN-LAST:event_cinco_ochoMouseClicked
 
     private void seis_nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seis_nueveMouseClicked
@@ -1889,6 +1897,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[9]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, seis_nueve);
     }//GEN-LAST:event_seis_nueveMouseClicked
 
     private void siete_ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siete_ochoMouseClicked
@@ -1896,6 +1905,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[10]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, siete_ocho);
     }//GEN-LAST:event_siete_ochoMouseClicked
 
     private void ocho_nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ocho_nueveMouseClicked
@@ -1903,6 +1913,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[11]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ocho_nueve);
     }//GEN-LAST:event_ocho_nueveMouseClicked
 
     private void siete_diezMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siete_diezMouseClicked
@@ -1910,6 +1921,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[12]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, siete_diez);
     }//GEN-LAST:event_siete_diezMouseClicked
 
     private void ocho_onceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ocho_onceMouseClicked
@@ -1917,6 +1929,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[13]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ocho_once);
     }//GEN-LAST:event_ocho_onceMouseClicked
 
     private void nueve_doceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nueve_doceMouseClicked
@@ -1924,6 +1937,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[14]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, nueve_doce);
     }//GEN-LAST:event_nueve_doceMouseClicked
 
     private void diez_onceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diez_onceMouseClicked
@@ -1931,6 +1945,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[15]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diez_once);
     }//GEN-LAST:event_diez_onceMouseClicked
 
     private void once_doceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_once_doceMouseClicked
@@ -1938,6 +1953,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[16]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, once_doce);
     }//GEN-LAST:event_once_doceMouseClicked
 
     private void diez_treceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diez_treceMouseClicked
@@ -1945,6 +1961,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[17]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diez_trece);
     }//GEN-LAST:event_diez_treceMouseClicked
 
     private void once_catorceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_once_catorceMouseClicked
@@ -1952,6 +1969,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[18]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, once_catorce);
     }//GEN-LAST:event_once_catorceMouseClicked
 
     private void doce_quinceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doce_quinceMouseClicked
@@ -1959,6 +1977,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[19]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, doce_quince);
     }//GEN-LAST:event_doce_quinceMouseClicked
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
@@ -1966,6 +1985,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[20]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel4);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
@@ -1973,6 +1993,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[21]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel5);
     }//GEN-LAST:event_jLabel15MouseClicked
 
     private void trece_dieciseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trece_dieciseisMouseClicked
@@ -1980,6 +2001,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[22]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, trece_dieciseis);
     }//GEN-LAST:event_trece_dieciseisMouseClicked
 
     private void catorce_diecisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_catorce_diecisieteMouseClicked
@@ -1987,6 +2009,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[23]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, catorce_diecisiete);
     }//GEN-LAST:event_catorce_diecisieteMouseClicked
 
     private void quince_dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quince_dieciochoMouseClicked
@@ -1994,6 +2017,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[24]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, quince_dieciocho);
     }//GEN-LAST:event_quince_dieciochoMouseClicked
 
     private void dieciseis_diecisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciseis_diecisieteMouseClicked
@@ -2001,6 +2025,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[25]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, dieciseis_diecisiete);
     }//GEN-LAST:event_dieciseis_diecisieteMouseClicked
 
     private void diecisiete_dieciochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecisiete_dieciochoMouseClicked
@@ -2008,6 +2033,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[26]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diecisiete_dieciocho);
     }//GEN-LAST:event_diecisiete_dieciochoMouseClicked
 
     private void deiciseis_diecinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deiciseis_diecinueveMouseClicked
@@ -2015,6 +2041,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[27]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, deiciseis_diecinueve);
     }//GEN-LAST:event_deiciseis_diecinueveMouseClicked
 
     private void diecisiete_veinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecisiete_veinteMouseClicked
@@ -2022,6 +2049,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[28]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diecisiete_veinte);
     }//GEN-LAST:event_diecisiete_veinteMouseClicked
 
     private void dieciocho_ventiunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciocho_ventiunoMouseClicked
@@ -2029,6 +2057,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[29]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, dieciocho_ventiuno);
     }//GEN-LAST:event_dieciocho_ventiunoMouseClicked
 
     private void diecinueve_veinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecinueve_veinteMouseClicked
@@ -2036,6 +2065,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[30]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diecinueve_veinte);
     }//GEN-LAST:event_diecinueve_veinteMouseClicked
 
     private void veinte_veintiunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinte_veintiunoMouseClicked
@@ -2043,6 +2073,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[31]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veinte_veintiuno);
     }//GEN-LAST:event_veinte_veintiunoMouseClicked
 
     private void diecinueve_dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diecinueve_dosMouseClicked
@@ -2050,6 +2081,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[32]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, diecinueve_dos);
     }//GEN-LAST:event_diecinueve_dosMouseClicked
 
     private void veinte_tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinte_tresMouseClicked
@@ -2057,6 +2089,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[33]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veinte_tres);
     }//GEN-LAST:event_veinte_tresMouseClicked
 
     private void ventiuno_cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiuno_cuatroMouseClicked
@@ -2064,6 +2097,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[34]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventiuno_cuatro);
     }//GEN-LAST:event_ventiuno_cuatroMouseClicked
 
     private void veintedos_veintetresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintedos_veintetresMouseClicked
@@ -2071,6 +2105,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[35]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veintedos_veintetres);
     }//GEN-LAST:event_veintedos_veintetresMouseClicked
 
     private void veintitres_veinticuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintitres_veinticuatroMouseClicked
@@ -2078,6 +2113,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[36]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veintitres_veinticuatro);
     }//GEN-LAST:event_veintitres_veinticuatroMouseClicked
 
     private void ventidos_cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventidos_cincoMouseClicked
@@ -2085,6 +2121,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[37]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventidos_cinco);
     }//GEN-LAST:event_ventidos_cincoMouseClicked
 
     private void ventitres_seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventitres_seisMouseClicked
@@ -2092,6 +2129,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[38]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventitres_seis);
     }//GEN-LAST:event_ventitres_seisMouseClicked
 
     private void venticuatro_sieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticuatro_sieteMouseClicked
@@ -2099,6 +2137,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[39]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, venticuatro_siete);
     }//GEN-LAST:event_venticuatro_sieteMouseClicked
 
     private void veinticinco_veintiseisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinticinco_veintiseisMouseClicked
@@ -2106,6 +2145,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[40]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veinticinco_veintiseis);
     }//GEN-LAST:event_veinticinco_veintiseisMouseClicked
 
     private void veintiseis_veintisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintiseis_veintisieteMouseClicked
@@ -2113,6 +2153,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[41]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veintiseis_veintisiete);
     }//GEN-LAST:event_veintiseis_veintisieteMouseClicked
 
     private void venticinco_ochoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_venticinco_ochoMouseClicked
@@ -2120,6 +2161,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[42]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, venticinco_ocho);
     }//GEN-LAST:event_venticinco_ochoMouseClicked
 
     private void ventiseis_nueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiseis_nueveMouseClicked
@@ -2127,6 +2169,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[43]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventiseis_nueve);
     }//GEN-LAST:event_ventiseis_nueveMouseClicked
 
     private void ventisiete_treintaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventisiete_treintaMouseClicked
@@ -2134,6 +2177,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[44]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventisiete_treinta);
     }//GEN-LAST:event_ventisiete_treintaMouseClicked
 
     private void veintiocho_veintinueveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintiocho_veintinueveMouseClicked
@@ -2141,6 +2185,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[45]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veintiocho_veintinueve);
     }//GEN-LAST:event_veintiocho_veintinueveMouseClicked
 
     private void veintinueve_treintaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintinueve_treintaMouseClicked
@@ -2148,6 +2193,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[46]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, veintinueve_treinta);
     }//GEN-LAST:event_veintinueve_treintaMouseClicked
 
     private void ventiocho_unoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventiocho_unoMouseClicked
@@ -2155,6 +2201,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[47]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventiocho_uno);
     }//GEN-LAST:event_ventiocho_unoMouseClicked
 
     private void ventinueve_dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ventinueve_dosMouseClicked
@@ -2162,6 +2209,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[48]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, ventinueve_dos);
     }//GEN-LAST:event_ventinueve_dosMouseClicked
 
     private void treinta_tressMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treinta_tressMouseClicked
@@ -2169,6 +2217,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[49]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, treinta_tress);
     }//GEN-LAST:event_treinta_tressMouseClicked
 
     private void jLabel39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel39MouseClicked
@@ -2176,6 +2225,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[50]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel39);
     }//GEN-LAST:event_jLabel39MouseClicked
 
     private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
@@ -2183,6 +2233,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[51]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel25);
     }//GEN-LAST:event_jLabel25MouseClicked
 
     private void treintauno_cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treintauno_cuatroMouseClicked
@@ -2190,6 +2241,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[52]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, treintauno_cuatro);
     }//GEN-LAST:event_treintauno_cuatroMouseClicked
 
     private void treintados_cincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treintados_cincoMouseClicked
@@ -2197,6 +2249,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[53]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, treintados_cinco);
     }//GEN-LAST:event_treintados_cincoMouseClicked
 
     private void treintatres_seisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treintatres_seisMouseClicked
@@ -2204,6 +2257,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[54]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, treintatres_seis);
     }//GEN-LAST:event_treintatres_seisMouseClicked
 
     private void jLabel40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel40MouseClicked
@@ -2211,6 +2265,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[55]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel40);
     }//GEN-LAST:event_jLabel40MouseClicked
 
     private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
@@ -2218,6 +2273,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[56]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel26);
     }//GEN-LAST:event_jLabel26MouseClicked
 
     private void cero_tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cero_tresMouseClicked
@@ -2225,6 +2281,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[57]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cero_tres);
     }//GEN-LAST:event_cero_tresMouseClicked
 
     private void cero_dosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cero_dosMouseClicked
@@ -2232,6 +2289,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[58]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cero_dos);
     }//GEN-LAST:event_cero_dosMouseClicked
 
     private void cero_unoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cero_unoMouseClicked
@@ -2239,6 +2297,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero[59]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, cero_uno);
     }//GEN-LAST:event_cero_unoMouseClicked
 
     private void jLabel61MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel61MouseClicked
@@ -2246,6 +2305,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[0]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+         controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados,jLabel61);
     }//GEN-LAST:event_jLabel61MouseClicked
 
     private void jLabel62MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel62MouseClicked
@@ -2253,6 +2313,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[1]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel62);
     }//GEN-LAST:event_jLabel62MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -2260,6 +2321,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[2]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+         controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel3);
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jLabel42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseClicked
@@ -2267,6 +2329,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[3]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+         controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel42);
     }//GEN-LAST:event_jLabel42MouseClicked
 
     private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
@@ -2274,6 +2337,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[4]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel55);
     }//GEN-LAST:event_jLabel55MouseClicked
 
     private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
@@ -2281,6 +2345,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[5]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel56);
     }//GEN-LAST:event_jLabel56MouseClicked
 
     private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
@@ -2288,6 +2353,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[6]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel53);
     }//GEN-LAST:event_jLabel53MouseClicked
 
     private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
@@ -2295,6 +2361,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[7]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel54);
     }//GEN-LAST:event_jLabel54MouseClicked
 
     private void jLabel59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel59MouseClicked
@@ -2302,6 +2369,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[8]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel59);
     }//GEN-LAST:event_jLabel59MouseClicked
 
     private void jLabel60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60MouseClicked
@@ -2309,6 +2377,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[9]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel60);
     }//GEN-LAST:event_jLabel60MouseClicked
 
     private void jLabel57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel57MouseClicked
@@ -2316,6 +2385,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[10]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel57);
     }//GEN-LAST:event_jLabel57MouseClicked
 
     private void jLabel58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel58MouseClicked
@@ -2323,6 +2393,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[11]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel58);
     }//GEN-LAST:event_jLabel58MouseClicked
 
     private void jLabel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel51MouseClicked
@@ -2330,6 +2401,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[12]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel51);
     }//GEN-LAST:event_jLabel51MouseClicked
 
     private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
@@ -2337,6 +2409,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[13]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel52);
     }//GEN-LAST:event_jLabel52MouseClicked
 
     private void jLabel50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseClicked
@@ -2344,6 +2417,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[14]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel50);
     }//GEN-LAST:event_jLabel50MouseClicked
 
     private void jLabel49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MouseClicked
@@ -2351,6 +2425,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[15]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel49);
     }//GEN-LAST:event_jLabel49MouseClicked
 
     private void jLabel48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel48MouseClicked
@@ -2358,6 +2433,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[16]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel48);
     }//GEN-LAST:event_jLabel48MouseClicked
 
     private void jLabel47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MouseClicked
@@ -2365,6 +2441,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[17]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel47);
     }//GEN-LAST:event_jLabel47MouseClicked
 
     private void jLabel46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MouseClicked
@@ -2372,6 +2449,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[18]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel46);
     }//GEN-LAST:event_jLabel46MouseClicked
 
     private void jLabel45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel45MouseClicked
@@ -2379,6 +2457,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[19]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel45);
     }//GEN-LAST:event_jLabel45MouseClicked
 
     private void jLabel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MouseClicked
@@ -2386,6 +2465,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[20]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel43);
     }//GEN-LAST:event_jLabel43MouseClicked
 
     private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
@@ -2393,6 +2473,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloEsquina[21]=banco[0];
         cantidadFicha=banco[1];
         jLabelMonto.setText(cantidadFicha+"");
+        controladorJuego.setImage("src\\imagens\\fichaama.png", clickeados, jLabel44);
     }//GEN-LAST:event_jLabel44MouseClicked
 
     private void jButtonTerminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTerminarActionPerformed
@@ -2523,7 +2604,6 @@ public class InterfazRuleta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3_6;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
