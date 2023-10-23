@@ -7,10 +7,12 @@ package Vista;
 import Controlador.ConectarBD;
 import Modelo.Jugador;
 import static Vista.InterfazRuleta.resultado;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -32,6 +34,7 @@ public class InterfazNombre extends javax.swing.JFrame {
             System.out.println(e);
             
         }
+        jButtonContinuar.setEnabled(false);
     }
 
     /**
@@ -44,7 +47,7 @@ public class InterfazNombre extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jButtonContinuar = new javax.swing.JButton();
         jTextFieldUsuario = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -56,11 +59,20 @@ public class InterfazNombre extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 102, 51));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 0), 5, true));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 0));
-        jButton1.setText("Continuar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonContinuar.setBackground(new java.awt.Color(204, 204, 0));
+        jButtonContinuar.setText("Continuar");
+        jButtonContinuar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonContinuarActionPerformed(evt);
+            }
+        });
+
+        jTextFieldUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextFieldUsuarioKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextFieldUsuarioKeyTyped(evt);
             }
         });
 
@@ -75,7 +87,7 @@ public class InterfazNombre extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(122, 122, 122)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                    .addComponent(jButtonContinuar, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
                     .addComponent(jTextFieldUsuario)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -94,7 +106,7 @@ public class InterfazNombre extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabelPuntaje)
                 .addGap(31, 31, 31)
-                .addComponent(jButton1)
+                .addComponent(jButtonContinuar)
                 .addContainerGap(81, Short.MAX_VALUE))
         );
 
@@ -114,7 +126,8 @@ public class InterfazNombre extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonContinuarActionPerformed
+        
         try{
             
             objJugador.setNombre(jTextFieldUsuario.getText());
@@ -134,7 +147,26 @@ public class InterfazNombre extends javax.swing.JFrame {
         ventanaScore.setVisible(true);
         ventanaScore.setLocationRelativeTo(null);
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonContinuarActionPerformed
+
+    private void jTextFieldUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioKeyTyped
+        jButtonContinuar.setEnabled(true);
+        if(jTextFieldUsuario.getText().length()>=15){
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+            getToolkit().beep();
+            JOptionPane.showMessageDialog(null, "LLEGO AL LIMITE PERMITIDO");
+        }
+    }//GEN-LAST:event_jTextFieldUsuarioKeyTyped
+
+    private void jTextFieldUsuarioKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioKeyReleased
+        if(jTextFieldUsuario.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "El CAMPO NO PUEDE ESTAR VACIO");
+            jButtonContinuar.setEnabled(false);
+        }else{
+            jButtonContinuar.setEnabled(true);
+        }
+    }//GEN-LAST:event_jTextFieldUsuarioKeyReleased
 
     /**
      * @param args the command line arguments
@@ -173,7 +205,7 @@ public class InterfazNombre extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonContinuar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelPuntaje;

@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -53,9 +54,16 @@ public class InterfazRuleta extends javax.swing.JFrame {
     private boolean flagFicha20;
     private boolean flagFicha50;
     private boolean flagFicha100;
-    private int montoMesa;
     private int cantidadFicha;
     private int[] banco;
+    private BufferedImage image;
+    private BufferedImage image2;
+    private BufferedImage image3;
+    private BufferedImage image4;
+    private ImageIcon imageIcon;
+    private ImageIcon imageIcon2;
+    private ImageIcon imageIcon3;
+    private ImageIcon imageIcon4;
     public static int resultado;
     public InterfazRuleta() {
         initComponents();        
@@ -83,20 +91,19 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloTripleNumero=new int[2];
         arregloDobleNumero=new int[60];
         arregloEsquina=new int[22];
-        montoMesa=0;
-        cantidadFicha=500;
+        cantidadFicha=100;
         jLabelMonto.setText(cantidadFicha+"");
         banco=new int[2];
         clickeados=new ArrayList<javax.swing.JLabel>();
          try {
-            BufferedImage image = ImageIO.read(new File("src\\imagens\\10.png"));
-            BufferedImage image2 = ImageIO.read(new File("src\\imagens\\20.png"));
-            BufferedImage image3 = ImageIO.read(new File("src\\imagens\\50.png"));
-            BufferedImage image4 = ImageIO.read(new File("src\\imagens\\100.png"));
-            ImageIcon imageIcon = new ImageIcon(image.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
-            ImageIcon imageIcon2 = new ImageIcon(image2.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
-            ImageIcon imageIcon3 = new ImageIcon(image3.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
-            ImageIcon imageIcon4 = new ImageIcon(image4.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
+            image = ImageIO.read(new File("src\\imagens\\10.png"));
+            image2 = ImageIO.read(new File("src\\imagens\\20.png"));
+            image3 = ImageIO.read(new File("src\\imagens\\50.png"));
+            image4 = ImageIO.read(new File("src\\imagens\\100.png"));
+            imageIcon = new ImageIcon(image.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
+            imageIcon2 = new ImageIcon(image2.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
+            imageIcon3 = new ImageIcon(image3.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
+            imageIcon4 = new ImageIcon(image4.getScaledInstance(80, 80, Image.SCALE_SMOOTH));
             jButton10.setIcon(imageIcon);
             jButton20.setIcon(imageIcon2);
             jButton50.setIcon(imageIcon3);
@@ -117,7 +124,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
-        Empezar = new javax.swing.JButton();
+        jButonEmpezar = new javax.swing.JButton();
         jLabelMostrarNumero = new javax.swing.JLabel();
         jLabelMostrarColor = new javax.swing.JLabel();
         ruletita = new javax.swing.JLabel();
@@ -281,14 +288,14 @@ public class InterfazRuleta extends javax.swing.JFrame {
         jLabel33.setText("CANTIDAD DE FICHAS :");
         jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
-        Empezar.setBackground(new java.awt.Color(204, 255, 255));
-        Empezar.setText("Empezar");
-        Empezar.addActionListener(new java.awt.event.ActionListener() {
+        jButonEmpezar.setBackground(new java.awt.Color(204, 255, 255));
+        jButonEmpezar.setText("Empezar");
+        jButonEmpezar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EmpezarActionPerformed(evt);
+                jButonEmpezarActionPerformed(evt);
             }
         });
-        jPanel1.add(Empezar, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 260, -1, -1));
+        jPanel1.add(jButonEmpezar, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 260, -1, -1));
 
         jLabelMostrarNumero.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabelMostrarNumero.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(204, 0, 51), java.awt.Color.darkGray, new java.awt.Color(153, 0, 0)));
@@ -1337,7 +1344,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
+    private void jButonEmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButonEmpezarActionPerformed
         int numero=ruedaGirando.aleatorio();
         int numIndividual;
         int numColor;
@@ -1396,7 +1403,17 @@ public class InterfazRuleta extends javax.swing.JFrame {
             a.setIcon(null);
         }
         clickeados=new ArrayList<javax.swing.JLabel>();
-    }//GEN-LAST:event_EmpezarActionPerformed
+        
+        if (cantidadFicha==0){
+            JOptionPane.showMessageDialog(null, "usted perdio");
+            jButton10.setEnabled(false);
+            jButton20.setEnabled(false);
+            jButton50.setEnabled(false);
+            jButton100.setEnabled(false);
+            jButonEmpezar.setEnabled(false);
+        }
+        
+    }//GEN-LAST:event_jButonEmpezarActionPerformed
 
     private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked
         banco=controladorJuego.sumarPilaficha(flagFicha10, flagFicha20, flagFicha50, flagFicha100, arregloMesa, 3,cantidadFicha, clickeados, tres);
@@ -2431,7 +2448,6 @@ public class InterfazRuleta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Empezar;
     private javax.swing.JLabel Mesita;
     private javax.swing.JLabel catorce;
     private javax.swing.JLabel catorce_diecisiete;
@@ -2464,6 +2480,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
     private javax.swing.JLabel dos;
     private javax.swing.JLabel dos_docena;
     private javax.swing.JLabel impair;
+    private javax.swing.JButton jButonEmpezar;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton20;
