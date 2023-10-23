@@ -10,7 +10,7 @@ package Modelo;
  */
 public class Jugador {
     private String nombre;
-    private String contrasenia;
+    private String puntaje;
 
     public String getNombre() {
         return nombre;
@@ -22,13 +22,13 @@ public class Jugador {
     }
 
 
-    public String getContrasenia() {
-        return contrasenia;
+    public String getPuntaje() {
+        return puntaje;
     }
 
 
-    public void setContrasenia(String contrasenia) {
-        this.contrasenia = contrasenia;
+    public void setPuntaje(String contrasenia) {
+        this.puntaje = contrasenia;
     }
 }
 
