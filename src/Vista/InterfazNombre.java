@@ -18,10 +18,10 @@ import java.sql.Statement;
  */
 public class InterfazNombre extends javax.swing.JFrame {
 
-        static Connection conexion = null;
-        static Statement sentencia = null;
-        ConectarBD con = new ConectarBD();
-        Jugador objJugador=new Jugador();
+        private static Connection conexion = null;
+        private static Statement sentencia = null;
+        private ConectarBD con = new ConectarBD();
+        private Jugador objJugador=new Jugador();
     public InterfazNombre() {
         initComponents();
         jLabelPuntaje.setText(resultado+"");
@@ -118,17 +118,12 @@ public class InterfazNombre extends javax.swing.JFrame {
         try{
             
             objJugador.setNombre(jTextFieldUsuario.getText());
-            objJugador.setPuntaje(jLabelPuntaje.getText());
-            
-            /*String sentenciaSQL1 = new String();
-                sentenciaSQL1="INSERT INTO jugador(nombre,contrasenia)";
-                sentenciaSQL1= sentenciaSQL1+"VALUES('"+objJugador.getNombre()+"','"+objJugador.getContrasenia()+"')";
-                sentencia.execute(sentenciaSQL1);*/
+            objJugador.setPuntaje(resultado);
                 
             String sql = "INSERT INTO jugador(nombre,puntaje) VALUES(?,?)";
                 PreparedStatement pst = conexion.prepareStatement(sql);
                 pst.setString(1, objJugador.getNombre());
-                pst.setString(2, objJugador.getPuntaje());
+                pst.setInt(2, objJugador.getPuntaje());
                 pst.executeUpdate();
                 
         }catch(Exception e){

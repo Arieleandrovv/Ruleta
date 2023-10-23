@@ -15,7 +15,6 @@ import Modelo.FichaCien;
 import Modelo.FichaCincuenta;
 import Modelo.FichaVeinte;
 import Modelo.ReglasRuleta;
-import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -26,37 +25,37 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * Ariel Vera y Marcia Lafuente v1
+ * Ariel Vera y Marcia Lafuente v2
  */
 public class InterfazRuleta extends javax.swing.JFrame {
-    CasillaNegra cane;
-    CasillaRoja caro;
-    CasillaVerde cave;
-    Ficha fichaNueva;
-    FichaDiez fdiez;
-    FichaVeinte fveinte;
-    FichaCincuenta fcincuenta;
-    FichaCien fcien;
-    int[] arregloMesa;
-    int[] arregloColor;
-    int[] arregloParImpar;
-    int[] arregloMitad;
-    int[] arregloDocena;
-    int[] arregloColumna;
-    int[] arregloTripleNumero;
-    int[] arregloDobleNumero;
-    int[] arregloEsquina;
-    ArrayList <javax.swing.JLabel> clickeados;
-    ReglasRuleta apuesta;
-    Rueda ruedaGirando;
-    ControladorRuleta controladorJuego;
-    boolean flagFicha10;
-    boolean flagFicha20;
-    boolean flagFicha50;
-    boolean flagFicha100;
-    int montoMesa;
-    int cantidadFicha;
-    int[] banco;
+    private CasillaNegra cane;
+    private CasillaRoja caro;
+    private CasillaVerde cave;
+    private Ficha fichaNueva;
+    private FichaDiez fdiez;
+    private FichaVeinte fveinte;
+    private FichaCincuenta fcincuenta;
+    private FichaCien fcien;
+    private int[] arregloMesa;
+    private int[] arregloColor;
+    private int[] arregloParImpar;
+    private int[] arregloMitad;
+    private int[] arregloDocena;
+    private int[] arregloColumna;
+    private int[] arregloTripleNumero;
+    private int[] arregloDobleNumero;
+    private int[] arregloEsquina;
+    private ArrayList <javax.swing.JLabel> clickeados;
+    private ReglasRuleta apuesta;
+    private Rueda ruedaGirando;
+    private ControladorRuleta controladorJuego;
+    private boolean flagFicha10;
+    private boolean flagFicha20;
+    private boolean flagFicha50;
+    private boolean flagFicha100;
+    private int montoMesa;
+    private int cantidadFicha;
+    private int[] banco;
     public static int resultado;
     public InterfazRuleta() {
         initComponents();        
@@ -1396,6 +1395,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
             javax.swing.JLabel a=clickeados.get(x);
             a.setIcon(null);
         }
+        clickeados=new ArrayList<javax.swing.JLabel>();
     }//GEN-LAST:event_EmpezarActionPerformed
 
     private void tresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMouseClicked

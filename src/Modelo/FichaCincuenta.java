@@ -6,7 +6,7 @@ package Modelo;
 
 /**
  *
- * Ariel Vera
+ * Ariel Vera y Marcia Lafuente v2
  */
 public class FichaCincuenta extends Ficha{
     private int valor;

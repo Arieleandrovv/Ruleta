@@ -6,13 +6,12 @@ package Modelo;
 
 /**
  *
- * Ariel Vera
+ * Ariel Vera y Marcia Lafuente v2
  */
 public class FichaDiez extends Ficha {
     
     public FichaDiez(int valor, String color) {
-        super(valor, color);
-        
+        super(valor, color);        
     }
     
     @Override

@@ -6,7 +6,7 @@ package Modelo;
 
 /**
  *
- * @author PC
+ * Ariel Vera y Marcia Lafuente
  */
 public interface Casillero {
     boolean isCasillero (int numero);

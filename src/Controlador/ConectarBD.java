@@ -13,15 +13,15 @@ import javax.swing.JOptionPane;
  * @author PC
  */
 public class ConectarBD {
-    Connection conectar = null;
+    private Connection conectar = null;
     
-    String user = "root";
-    String password = "";//*********** colocar el password de su base de datos
-    String dataBase = "ruleta_db";
-    String server = "localhost";
-    String puerto = "3306";
-    String driver = "com.mysql.cj.jdbc.Driver";    
-    String cadena = "jdbc:mysql://"+server+":"+puerto+"/"+dataBase;
+    private String user = "root";
+    private String password = "";//*********** colocar el password de su base de datos
+    private String dataBase = "ruleta_db";
+    private String server = "localhost";
+    private String puerto = "3306";
+    private String driver = "com.mysql.cj.jdbc.Driver";    
+    private String cadena = "jdbc:mysql://"+server+":"+puerto+"/"+dataBase;
     
     public Connection establecerConexion(){
         

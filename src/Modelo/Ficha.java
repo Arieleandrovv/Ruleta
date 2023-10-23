@@ -9,8 +9,8 @@ package Modelo;
  * Marcia Lafuente v1
  */
 public class Ficha {
-    protected int valor;
-    protected String color;
+    private int valor;
+    private String color;
     
     public Ficha(){
     

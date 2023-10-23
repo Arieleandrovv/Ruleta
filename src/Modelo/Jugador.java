@@ -6,11 +6,11 @@ package Modelo;
 
 /**
  *
- * @author PC
+ * Ariel Vera y Marcia Lafuente v2
  */
 public class Jugador {
     private String nombre;
-    private String puntaje;
+    private int puntaje;
 
     public String getNombre() {
         return nombre;
@@ -22,13 +22,13 @@ public class Jugador {
     }
 
 
-    public String getPuntaje() {
+    public int getPuntaje() {
         return puntaje;
     }
 
 
-    public void setPuntaje(String contrasenia) {
-        this.puntaje = contrasenia;
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
     }
 }
 

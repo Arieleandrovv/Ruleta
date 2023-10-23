@@ -26,16 +26,16 @@ import javax.swing.ImageIcon;
  * Ariel Vera y Marcia Lafuente v1
  */
 public class ControladorRuleta {
-    FichaDiez fdiez;
-    FichaVeinte fveinte;
-    FichaCincuenta fcincuenta;
-    FichaCien fcien;
-    Ficha f;
-    Ficha x;
-    ReglasRuleta apuesta;
-    CasillaNegra cane;
-    CasillaRoja caro;
-    CasillaVerde cave;
+    private FichaDiez fdiez;
+    private FichaVeinte fveinte;
+    private FichaCincuenta fcincuenta;
+    private FichaCien fcien;
+    private Ficha f;
+    private Ficha x;
+    private ReglasRuleta apuesta;
+    private CasillaNegra cane;
+    private CasillaRoja caro;
+    private CasillaVerde cave;
     private String camino= "src\\imagens\\fichaama.png";
     private int [] primeraColumna={1,4,7,10,13,16,19,22,25,28,31,34};
     private int [] segundaColumna={2,5,8,11,14,17,20,23,26,29,32,35};

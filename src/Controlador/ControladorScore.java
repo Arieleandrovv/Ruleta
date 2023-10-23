@@ -15,9 +15,9 @@ import javax.swing.JTable;
  * Ariel Vera v1
  */
 public class ControladorScore {
-    static Connection conexion=null;
-    static Statement sentencia=null;
-    ConectarBD con = new ConectarBD();
+    private static Connection conexion=null;
+    private static Statement sentencia=null;
+    private ConectarBD con = new ConectarBD();
     
     public void MostrarResultados(JTable tabla){
         DefaultTableModel modelo = new DefaultTableModel();
@@ -31,7 +31,7 @@ public class ControladorScore {
             sentencia=conexion.createStatement();
             ResultSet rs = sentencia.executeQuery(consultasql);
             while(rs.next()){
-                Object [] lista = {rs.getString(1), rs.getString(2)};
+                Object [] lista = {rs.getString(1), rs.getInt(2)};
                 modelo.addRow(lista);
             }
             tabla.setModel(modelo);
