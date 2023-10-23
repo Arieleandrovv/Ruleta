@@ -85,7 +85,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
         arregloDobleNumero=new int[60];
         arregloEsquina=new int[22];
         montoMesa=0;
-        cantidadFicha=60;
+        cantidadFicha=500;
         jLabelMonto.setText(cantidadFicha+"");
         banco=new int[2];
         clickeados=new ArrayList<javax.swing.JLabel>();

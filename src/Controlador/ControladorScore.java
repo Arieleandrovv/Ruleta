@@ -24,7 +24,7 @@ public class ControladorScore {
         modelo.addColumn("Jugador");
         modelo.addColumn("Puntaje");
         String consultasql = new String();
-        consultasql = "SELECT nombre, puntaje From jugador ORDER BY puntaje ASC LIMIT 10";
+        consultasql = "SELECT nombre, puntaje From jugador ORDER BY puntaje DESC LIMIT 10";
         Statement st;
         try{
             conexion=con.establecerConexion(); 

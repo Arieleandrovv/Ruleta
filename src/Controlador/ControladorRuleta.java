@@ -65,6 +65,7 @@ public class ControladorRuleta {
             }
         }else if (b){
             if(montoInicial>=20){
+                setImage(camino, arreglo,label);
                 monto=f.sumarPila(numero[index]);
                 montoInicial=fveinte.restarFichaVeinte(montoInicial);
             }
