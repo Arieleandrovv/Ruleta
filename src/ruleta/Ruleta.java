@@ -7,7 +7,7 @@ package ruleta;
 import Modelo.Ficha;
 import Modelo.FichaDiez;
 import Modelo.FichaVeinte;
-
+import Vista.InterfazRuleta;
 /**
  *
  * @author PC
@@ -18,7 +18,7 @@ public class Ruleta {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Ficha a= new Ficha(5, "rojo");
+       /* Ficha a= new Ficha(5, "rojo");
         FichaDiez diez =new FichaDiez(10,"verde");
         FichaVeinte veinte=new FichaVeinte (20,"azul");
         a=diez;
@@ -37,10 +37,11 @@ public class Ruleta {
         System.out.println("4 "+b);
         
         di =new FichaDiez(20,"magenta");
-        System.out.println("5 "+di);
+        System.out.println("5 "+di);*/
         
-        
-        
+        InterfazRuleta ventana=new InterfazRuleta();
+        ventana.setVisible(true);
+        ventana.setLocationRelativeTo(null);
         
         
         /*Ficha nueva2= (Ficha) diez;

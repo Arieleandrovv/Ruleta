@@ -13,6 +13,13 @@ import Modelo.FichaCincuenta;
 import Modelo.FichaDiez;
 import Modelo.FichaVeinte;
 import Modelo.ReglasRuleta;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -389,6 +396,18 @@ public class ControladorRuleta {
             valor=valor+apuesta.apuestaEsquina(arreglo[21]);
         }
         return valor;
+    }
+    
+    public void setImage(String path, ArrayList <javax.swing.JLabel> arreglo, javax.swing.JLabel label){
+        try{
+        BufferedImage image = ImageIO.read(new File(path));
+        ImageIcon imageIcon = new ImageIcon(image.getScaledInstance(20, 20, Image.SCALE_SMOOTH));
+        
+        label.setIcon(imageIcon);
+        arreglo.add(label);
+        }catch (IOException e) {
+            e.printStackTrace();
+        }    
     }
     
     private boolean isInColumna(int numero, int [] columna){
