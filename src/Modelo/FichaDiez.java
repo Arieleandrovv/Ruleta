@@ -15,7 +15,8 @@ public class FichaDiez extends Ficha {
         
     }
     
-    public int sumarFichaDiez(int monto){
+    @Override
+    public int sumarPila(int monto){
         return monto+10;
     }
     public int restarFichaDiez(int monto){
@@ -24,7 +25,7 @@ public class FichaDiez extends Ficha {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("FichaDiez{"+10+","+"rojo");
+        sb.append("FichaDiez{"+super.getValor()+","+super.getColor());
         sb.append('}');
         return sb.toString();
     }
