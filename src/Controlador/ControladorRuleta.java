@@ -36,6 +36,7 @@ public class ControladorRuleta {
     CasillaNegra cane;
     CasillaRoja caro;
     CasillaVerde cave;
+    private String camino= "src\\imagens\\fichaama.png";
     private int [] primeraColumna={1,4,7,10,13,16,19,22,25,28,31,34};
     private int [] segundaColumna={2,5,8,11,14,17,20,23,26,29,32,35};
     private int [] terceraColumna={3,6,9,12,15,18,21,24,27,30,33,36};
@@ -54,10 +55,11 @@ public class ControladorRuleta {
     }
     
     
-    public int[] sumarPilaficha(boolean a, boolean b, boolean c, boolean d, int [] numero,int index,int montoInicial){
+    public int[] sumarPilaficha(boolean a, boolean b, boolean c, boolean d, int [] numero,int index,int montoInicial, ArrayList <javax.swing.JLabel> arreglo, javax.swing.JLabel label){
         int monto=0;
         if (a){
             if(montoInicial>=10){
+                setImage(camino, arreglo,label);
                 monto=x.sumarPila(numero[index]);
                 montoInicial=fdiez.restarFichaDiez(montoInicial);
             }
@@ -68,11 +70,13 @@ public class ControladorRuleta {
             }
         }else if (c){
             if(montoInicial>=50){
+                setImage(camino, arreglo,label);
                 monto=fcincuenta.sumarFichaCincuenta(numero[index]);
                 montoInicial=fcincuenta.restarFichaCincuenta(montoInicial);
             }
         }else if (d){
             if(montoInicial>=100){
+                setImage(camino, arreglo,label);
                 monto=fcien.sumarFichaCien(numero[index]);
                 montoInicial=fcien.restarFichaCien(montoInicial);
             }
