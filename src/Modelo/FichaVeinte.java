@@ -6,7 +6,7 @@ package Modelo;
 
 /**
  *
- * @author PC
+ * Ariel Vera
  */
 public class FichaVeinte extends Ficha {
     

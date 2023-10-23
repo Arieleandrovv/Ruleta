@@ -10,7 +10,7 @@ import javax.swing.JScrollPane;
 
 /**
  *
- * @author PC
+ * Ariel Vera y Marcia Lafuente V1
  */
 public class InterfazScore extends javax.swing.JFrame {
 

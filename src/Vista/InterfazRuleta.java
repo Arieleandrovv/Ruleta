@@ -2511,28 +2511,27 @@ public class InterfazRuleta extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
-        Ficha a= new Ficha(5, "rojo");
-        FichaDiez diez =new FichaDiez(10,"verde");
-        FichaVeinte veinte=new FichaVeinte (20,"azul");
-        a=diez;
-       
         
-        Ficha b= new FichaDiez(1,"rojo");        
-        System.out.println("1 "+b);
+        Ficha nueva= new Ficha();
+        Ficha nueva2= new Ficha();
+        FichaVeinte fichaVeinte= new FichaVeinte(20,"magenta");
+        FichaCincuenta fichaCincuenta= new FichaCincuenta(1000,"verde");
         
-        FichaDiez di = new FichaDiez(10,"verde");
-        System.out.println("2 "+di);
+        System.out.println("1 "+nueva);
         
-        FichaVeinte ve= new FichaVeinte(20,"azul");
-        System.out.println("3 "+ve);
+        //casting
+        nueva=(Ficha)fichaVeinte;
+        System.out.println("2 "+nueva);
+        System.out.println("al ejecutar sumarPila utiliza el metodo del padre: "+nueva.sumarPila(10));
         
-        b =(Ficha) ve;
-        System.out.println("4 "+b);
+        //polimorfismo
+        nueva2=new FichaDiez (10000,"multicolor");
+        System.out.println("3 "+nueva2);
+        System.out.println("al ejecutar sumarPila utiliza el metodo del hijo: "+nueva2.sumarPila(10));
         
-        di =new FichaDiez(20,"magenta");
-        System.out.println("5 "+di);
-        
+        //shadowing
+        System.out.println("4 "+fichaCincuenta);
+        System.out.println("al ejecutarse hace sombra al valor del padre: " +fichaCincuenta.sumarFichaCincuenta(10));
 
         InterfazRuleta ventana=new InterfazRuleta();
         ventana.setVisible(true);
