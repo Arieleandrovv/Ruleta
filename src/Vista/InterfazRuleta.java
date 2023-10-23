@@ -117,6 +117,7 @@ public class InterfazRuleta extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
         Empezar = new javax.swing.JButton();
         jLabelMostrarNumero = new javax.swing.JLabel();
         jLabelMostrarColor = new javax.swing.JLabel();
@@ -261,7 +262,6 @@ public class InterfazRuleta extends javax.swing.JFrame {
         jButton100 = new javax.swing.JButton();
         jLabelGanancia = new javax.swing.JLabel();
         jLabelMonto = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -276,6 +276,13 @@ public class InterfazRuleta extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(204, 153, 0));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel33.setBackground(new java.awt.Color(102, 255, 102));
+        jLabel33.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel33.setText("CANTIDAD DE FICHAS :");
+        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+
+        Empezar.setBackground(new java.awt.Color(204, 255, 255));
         Empezar.setText("Empezar");
         Empezar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -284,11 +291,15 @@ public class InterfazRuleta extends javax.swing.JFrame {
         });
         jPanel1.add(Empezar, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 260, -1, -1));
 
+        jLabelMostrarNumero.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabelMostrarNumero.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(204, 0, 51), java.awt.Color.darkGray, new java.awt.Color(153, 0, 0)));
         jLabelMostrarNumero.setPreferredSize(new java.awt.Dimension(37, 16));
-        jPanel1.add(jLabelMostrarNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 40, -1));
+        jPanel1.add(jLabelMostrarNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 50, 30));
 
+        jLabelMostrarColor.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabelMostrarColor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, new java.awt.Color(255, 0, 51), java.awt.Color.darkGray, new java.awt.Color(153, 0, 0)));
         jLabelMostrarColor.setPreferredSize(new java.awt.Dimension(37, 16));
-        jPanel1.add(jLabelMostrarColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+        jPanel1.add(jLabelMostrarColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 70, 30));
 
         ruletita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ruletita3.png"))); // NOI18N
         jPanel1.add(ruletita, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 310, 300));
@@ -1272,34 +1283,38 @@ public class InterfazRuleta extends javax.swing.JFrame {
         });
         jPanel1.add(jButton100, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 80, -1, -1));
 
-        jLabelGanancia.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(102, 102, 0)));
+        jLabelGanancia.setBackground(new java.awt.Color(255, 51, 51));
+        jLabelGanancia.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabelGanancia.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(255, 0, 51), java.awt.Color.darkGray, new java.awt.Color(153, 0, 0)));
         jLabelGanancia.setPreferredSize(new java.awt.Dimension(37, 16));
-        jPanel1.add(jLabelGanancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
+        jPanel1.add(jLabelGanancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 50, 30));
 
-        jLabelMonto.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(102, 102, 0)));
+        jLabelMonto.setBackground(new java.awt.Color(255, 204, 204));
+        jLabelMonto.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabelMonto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(255, 0, 51), java.awt.Color.darkGray, new java.awt.Color(102, 0, 0)));
+        jLabelMonto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabelMonto.setPreferredSize(new java.awt.Dimension(37, 16));
-        jPanel1.add(jLabelMonto, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, -1, -1));
-
-        jLabel33.setBackground(new java.awt.Color(51, 255, 0));
-        jLabel33.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel33.setText("Cantidad de fichas");
-        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+        jPanel1.add(jLabelMonto, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 50, 30));
 
         jLabel30.setBackground(new java.awt.Color(51, 255, 0));
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel30.setText("Ganancia");
+        jLabel30.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel30.setText("GANANCIA :");
         jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, -1, -1));
 
         jLabel4.setBackground(new java.awt.Color(51, 255, 0));
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setText("numero");
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel4.setText("NÚMERO :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(51, 255, 0));
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setText("Color");
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel5.setText("COLOR :");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
 
+        jButtonTerminar.setBackground(new java.awt.Color(204, 255, 255));
         jButtonTerminar.setText("Terminar");
         jButtonTerminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2511,28 +2526,27 @@ public class InterfazRuleta extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
-        Ficha a= new Ficha(5, "rojo");
-        FichaDiez diez =new FichaDiez(10,"verde");
-        FichaVeinte veinte=new FichaVeinte (20,"azul");
-        a=diez;
-       
         
-        Ficha b= new FichaDiez(1,"rojo");        
-        System.out.println("1 "+b);
+        Ficha nueva= new Ficha();
+        Ficha nueva2= new Ficha();
+        FichaVeinte fichaVeinte= new FichaVeinte(20,"magenta");
+        FichaCincuenta fichaCincuenta= new FichaCincuenta(1000,"verde");
         
-        FichaDiez di = new FichaDiez(10,"verde");
-        System.out.println("2 "+di);
+        System.out.println("1 "+nueva);
         
-        FichaVeinte ve= new FichaVeinte(20,"azul");
-        System.out.println("3 "+ve);
+        //casting
+        nueva=(Ficha)fichaVeinte;
+        System.out.println("2 "+nueva);
+        System.out.println("al ejecutar sumarPila utiliza el metodo del padre: "+nueva.sumarPila(10));
         
-        b =(Ficha) ve;
-        System.out.println("4 "+b);
+        //polimorfismo
+        nueva2=new FichaDiez (10000,"multicolor");
+        System.out.println("3 "+nueva2);
+        System.out.println("al ejecutar sumarPila utiliza el metodo del hijo: "+nueva2.sumarPila(10));
         
-        di =new FichaDiez(20,"magenta");
-        System.out.println("5 "+di);
-        
+        //shadowing
+        System.out.println("4 "+fichaCincuenta);
+        System.out.println("al ejecutarse hace sombra al valor del padre: " +fichaCincuenta.sumarFichaCincuenta(10));
 
         InterfazRuleta ventana=new InterfazRuleta();
         ventana.setVisible(true);

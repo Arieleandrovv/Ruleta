@@ -6,7 +6,7 @@ package Modelo;
 
 /**
  *
- * @author PC
+ * Ariel Vera
  */
 public class FichaCien extends Ficha{
 
@@ -22,7 +22,7 @@ public class FichaCien extends Ficha{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("FichaDiez{"+super.getValor()+","+super.getColor());
+        sb.append("FichaCien{"+super.getValor()+","+super.getColor());
         sb.append('}');
         return sb.toString();
     }

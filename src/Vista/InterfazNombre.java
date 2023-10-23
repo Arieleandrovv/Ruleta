@@ -118,22 +118,26 @@ public class InterfazNombre extends javax.swing.JFrame {
         try{
             
             objJugador.setNombre(jTextFieldUsuario.getText());
-            objJugador.setContrasenia(jLabelPuntaje.getText());
+            objJugador.setPuntaje(jLabelPuntaje.getText());
             
             /*String sentenciaSQL1 = new String();
                 sentenciaSQL1="INSERT INTO jugador(nombre,contrasenia)";
                 sentenciaSQL1= sentenciaSQL1+"VALUES('"+objJugador.getNombre()+"','"+objJugador.getContrasenia()+"')";
                 sentencia.execute(sentenciaSQL1);*/
                 
-            String sql = "INSERT INTO jugador(nombre,contrasenia) VALUES(?,?)";
+            String sql = "INSERT INTO jugador(nombre,puntaje) VALUES(?,?)";
                 PreparedStatement pst = conexion.prepareStatement(sql);
                 pst.setString(1, objJugador.getNombre());
-                pst.setString(2, objJugador.getContrasenia());
+                pst.setString(2, objJugador.getPuntaje());
                 pst.executeUpdate();
                 
         }catch(Exception e){
             System.out.println(e);
         }
+        dispose();
+        InterfazScore ventanaScore=new InterfazScore();
+        ventanaScore.setVisible(true);
+        ventanaScore.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
