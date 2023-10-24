@@ -8,7 +8,7 @@ package Modelo;
  *
  * Ariel Vera y Marcia Lafuente v2
  */
-public class FichaCien extends Ficha{
+public class FichaCien extends Ficha implements Casillero{
 
     public FichaCien(int valor, String color) {
         super(valor, color);
@@ -25,5 +25,9 @@ public class FichaCien extends Ficha{
         sb.append("FichaCien{"+super.getValor()+","+super.getColor());
         sb.append('}');
         return sb.toString();
+    }
+    @Override
+    public boolean isCasillero(int numero) {
+        return false;
     }
 }
